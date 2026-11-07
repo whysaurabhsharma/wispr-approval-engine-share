@@ -1,0 +1,25 @@
+{"t": "2026-11-05T13:47:37", "skill": "it-brief", "input": "sample-01", "result": "pass", "cost_usd": 0.0}
+{"t": "2026-11-05T15:02:11", "skill": "claims-refresh", "input": "docs_hipaa", "result": "pass", "cost_usd": 0.0}
+{"t": "2026-11-05T15:11:28", "skill": "claims-refresh", "input": "all", "result": "pass", "cost_usd": 0.0}
+{"t": "2026-11-05T15:21:23", "skill": "claims-refresh", "input": "legal_otter_uctoday", "result": "pass", "cost_usd": 0.0}
+{"t": "2026-11-05T17:49:00", "skill": "claims-refresh", "input": "legal_granola_btlaw legal_otter_uctoday", "result": "pass", "cost_usd": 0.0}
+{"t": "2026-11-06T15:10:33", "skill": "mismatch-report", "input": "all", "result": "pass", "cost_usd": 0.0}
+{"t": "2026-11-06T15:39:41", "skill": "it-brief", "input": "sample-01", "result": "pass", "cost_usd": 0.0}
+{"t": "2026-11-06T15:55:59", "skill": "approval-pack", "input": "inputs/questions/approver-core.md", "result": "pass", "cost_usd": 0.0}
+{"t": "2026-11-06T16:06:05", "skill": "approval-pack", "input": "inputs/questions/approver-core.md", "result": "pass", "cost_usd": 0.0}
+{"t": "2026-11-06T16:38:12", "skill": "consent-memo", "input": "consent-memo.md", "result": "pass", "cost_usd": 0.0}
+{"t": "2026-11-06T16:58:23", "skill": "approval-pack", "input": "inputs/questions/planted-unanswerable.md", "result": "pass", "cost_usd": 0.0}
+{"t": "2026-11-06T17:08:15", "skill": "claims-refresh", "input": "docs_network wf_business wf_compliance_note wf_pricing", "result": "pass", "cost_usd": 0.0}
+{"t": "2026-11-06T17:52:32", "skill": "mismatch-report", "input": "all", "result": "pass", "cost_usd": 0.0}
+{"t": "2026-11-06T17:59:40", "skill": "mismatch-report", "input": "watch-batch-99", "result": "pass", "cost_usd": 0.0}
+{"t": "2026-11-06T18:08:22", "skill": "approval-pack", "input": "inputs/questions/approver-core.md", "result": "pass", "cost_usd": 0.0}
+{"t": "2026-11-06T18:24:45", "skill": "it-brief", "input": "ps-07", "result": "pass", "cost_usd": 0.0}
+{"t": "2026-11-06T18:29:48", "skill": "it-brief", "input": "ps-07", "result": "pass", "cost_usd": 0.0}
+{"t": "2026-11-06T18:35:18", "skill": "it-brief", "input": "ps-07", "result": "pass", "cost_usd": 0.0}
+{"t": "2026-11-06T18:41:00", "skill": "it-brief", "input": "ps-07", "result": "pass", "cost_usd": 0.0}
+{"t": "2026-11-06T18:48:34", "skill": "it-brief", "input": "ps-01", "result": "pass", "cost_usd": 0.0}
+{"t": "2026-11-06T18:48:34", "skill": "it-brief", "input": "ps-02", "result": "pass", "cost_usd": 0.0}
+{"t": "2026-11-06T18:48:35", "skill": "it-brief", "input": "ps-10", "result": "pass", "cost_usd": 0.0}
+{"t": "2026-11-06T19:05:53", "skill": "business-case", "input": "ps-01", "result": "pass", "cost_usd": 0.0}
+{"t": "2026-11-07T16:51:07", "skill": "claims-refresh", "input": "docs_audit_logs,docs_baa_revoke,docs_hipaa,docs_vendor_assessments", "result": "pass", "cost_usd": 0.0}
+{"t": "2026-11-07T17:03:20", "skill": "mismatch-report", "input": "all", "result": "pass", "cost_usd": 0.0}

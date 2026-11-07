@@ -1,0 +1,17 @@
+# Pairs always sent to mismatch-judge. Add a pair when you suspect a gap the differ cannot see from wording.
+- {a: android_no_baa_signing, b: hipaa_baa_any_plan, why: HIPAA on any plan vs no BAA flow on Android}
+- {a: android_no_baa_signing, b: flow_hipaa_ready_with_baa, why: HIPAA-ready with BAA vs no BAA flow on Android}
+- {a: android_no_baa_signing, b: dictation_controls_platforms, why: controls on Android vs no BAA flow on Android}
+- {a: docs_network_vulnerability_contact, b: vulnerability_reports_not_by_email, why: report vulnerabilities by email vs programme does not accept email}
+- {a: android_no_baa_signing, b: hipaa_baa_growth_enterprise, why: HIPAA on Growth and Enterprise vs no BAA flow on Android}
+- {a: android_no_baa_signing, b: hipaa_ready_all_plans, why: HIPAA-ready on every plan vs no BAA flow on Android}
+- {a: flow_hipaa_ready_with_baa, b: hipaa_covers_dictation_notetaker, why: HIPAA-ready for dictation vs BAA covers Notetaker}
+- {a: api_siem_connectors_in_progress, b: audit_logs_siem_enterprise_plan, why: SIEM connectors in progress vs SIEM on Enterprise}
+- {a: hipaa_baa_growth_enterprise, b: hipaa_ready_all_plans, why: HIPAA on Growth and Enterprise vs HIPAA-ready on every plan, same day}
+- {a: pro_price_listed_15, b: roi_calculator_pro_monthly_12, why: Pro listed at 15 per month vs ROI calculator calls 12 the monthly cost}
+- {a: baa_personal_sign_ios, b: hipaa_personal_baa_not_in_app, why: personal BAA signed on iOS vs cannot be signed from the app}
+- {a: hipaa_free_pro_not_ready, b: hipaa_ready_all_plans, why: Free and Pro not HIPAA-ready vs every plan HIPAA-ready}
+- {a: baa_org_signing_requires_enterprise, b: hipaa_baa_signing_plans, why: org BAA needs Enterprise vs Growth and Enterprise}
+- {a: android_no_baa_signing, b: hipaa_baa_signing_plans, why: Android gap after signing moved to the admin portal}
+- {a: api_siem_connectors_in_progress, b: audit_logs_siem_streaming_requires_enterprise, why: SIEM in progress vs SIEM on Enterprise}
+- {a: docs_network_vulnerability_contact, b: vulnerability_reports_not_by_email_v2, why: email security@ vs no direct email}

@@ -1,0 +1,4 @@
+- {a: eval_aes_a, b: eval_aes_b}
+- {a: eval_notetaker_free_no, b: eval_notetaker_free_yes}
+- {a: eval_sso_a, b: eval_sso_b}
+- {a: eval_soc2_available, b: eval_soc2_expected}

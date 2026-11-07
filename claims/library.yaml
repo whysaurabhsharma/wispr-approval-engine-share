@@ -1,0 +1,4329 @@
+# CONTROLLED. Written by scripts/promote_claims.py and scripts/claims_delta.py. Do not edit by prompt.
+- id: dictation_audio_sharing_opt_in
+  version: 1
+  topic: consent
+  claim: Clicking Share Audio Recordings allows Apple to store audio of Siri and Dictation interactions from the Mac.
+  source_id: comp_apple_dictation
+  source_quote: allow Apple to store audio of your Siri and Dictation interactions
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: dictation_audio_sample_review
+  version: 1
+  topic: privacy
+  claim: Apple may review a sample of stored Siri and Dictation audio.
+  source_id: comp_apple_dictation
+  source_quote: Apple may review a sample of stored audio.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: dictation_on_device_model_macos27
+  version: 1
+  topic: privacy
+  claim: With Apple Intelligence in macOS 27, dictation uses an on-device model to improve spelling, punctuation and capitalization.
+  source_id: comp_apple_dictation
+  source_quote: dictation uses an on-device model to improve spelling, punctuation, and capitalization
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - macos 27
+  conflicts_with: []
+- id: dictation_on_device_model_language
+  version: 1
+  topic: product
+  claim: The on-device dictation enhancement is available in English on Mac models with M3 and later.
+  source_id: comp_apple_dictation
+  source_quote: Available in English on Mac models with M3 and later
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - macos 27
+  conflicts_with: []
+- id: dictation_on_device_model_memory
+  version: 1
+  topic: product
+  claim: The on-device dictation enhancement requires at least 12GB of unified memory.
+  source_id: comp_apple_dictation
+  source_quote: at least 12GB of unified memory
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - macos 27
+  conflicts_with: []
+- id: willow_no_audio_stored
+  version: 1
+  topic: privacy
+  claim: Willow states that no audio is stored after transcription.
+  source_id: comp_willow_security
+  source_quote: No audio is stored after transcription.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: willow_transcripts_not_retained
+  version: 1
+  topic: privacy
+  claim: Willow states transcripts are not logged server-side or retained by default after dictation.
+  source_id: comp_willow_security
+  source_quote: not logged server-side or retained by default
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: willow_no_ai_training_without_consent
+  version: 1
+  topic: consent
+  claim: Willow states voice and text are not used to improve AI models without user consent.
+  source_id: comp_willow_security
+  source_quote: not used to improve AI models without your consent
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: willow_privacy_mode_default_on
+  version: 1
+  topic: privacy
+  claim: Willow states Privacy Mode is enabled by default.
+  source_id: comp_willow_security
+  source_quote: Privacy Mode is enabled by default.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: willow_privacy_mode_keeps_nothing
+  version: 1
+  topic: privacy
+  claim: With Privacy Mode on, Willow states it keeps no audio, transcripts or edits from dictation sessions.
+  source_id: comp_willow_security
+  source_quote: Willow keeps nothing from your dictation sessions
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: willow_privacy_off_product_improvement
+  version: 1
+  topic: privacy
+  claim: When Privacy Mode is off, Willow states limited dictation data may be used to improve product quality.
+  source_id: comp_willow_security
+  source_quote: When Privacy Mode is off, limited dictation data may be used
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: willow_dictation_data_never_sold
+  version: 1
+  topic: privacy
+  claim: Willow states dictation data is never sold.
+  source_id: comp_willow_security
+  source_quote: it is never sold
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: willow_enterprise_enforce_privacy_mode
+  version: 1
+  topic: governance
+  claim: Enterprise admins can enforce Privacy Mode across their entire organization.
+  source_id: comp_willow_security
+  source_quote: Enterprise admins can enforce Privacy Mode across their entire organization.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: willow_enforced_users_cannot_disable
+  version: 1
+  topic: governance
+  claim: When Privacy Mode is enforced, individual users cannot turn it off.
+  source_id: comp_willow_security
+  source_quote: When enforced, individual users cannot turn it off
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: willow_team_changes_privacy_settings
+  version: 1
+  topic: governance
+  claim: Willow states privacy mode and data permissions can be changed at any time by the customer's team.
+  source_id: comp_willow_security
+  source_quote: Privacy mode and data permissions can be changed anytime by your team.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: willow_no_third_party_sharing
+  version: 1
+  topic: privacy
+  claim: Willow states it never sells or shares customer data with third parties for advertising or resale.
+  source_id: comp_willow_security
+  source_quote: Willow never sells or shares your data with third parties for advertising or resale.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: willow_sso_identity_provider
+  version: 1
+  topic: security
+  claim: Willow states it supports SSO by connecting to the organization's identity provider.
+  source_id: comp_willow_security
+  source_quote: Securely connect Willow to your organizationâs identity provider
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: willow_account_deletion_per_settings
+  version: 1
+  topic: privacy
+  claim: When an account is deleted, Willow states retained account data is deleted according to the user's privacy settings.
+  source_id: comp_willow_security
+  source_quote: retained account data is deleted according to your privacy settings
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: willow_soc2_type_ii_reported
+  version: 1
+  topic: compliance
+  claim: Willow reports a SOC 2 Type II certification.
+  source_id: comp_willow_security
+  source_quote: SOC 2 Type II
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: willow_security_controls_independently_audited
+  version: 1
+  topic: compliance
+  claim: Willow states its security controls are independently audited.
+  source_id: comp_willow_security
+  source_quote: Willowâs security controls are independently audited
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: willow_audit_report_on_request
+  version: 1
+  topic: compliance
+  claim: Willow states a customer's security team can request the full third-party audit report at any time.
+  source_id: comp_willow_security
+  source_quote: Your security team can request the full report at any time.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: willow_hipaa_ready_baa_where_applicable
+  version: 1
+  topic: compliance
+  claim: Willow states it supports HIPAA-ready workflows through a Business Associate Agreement where applicable.
+  source_id: comp_willow_security
+  source_quote: support HIPAA-ready workflows through a Business Associate Agreement where applicable
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: willow_zero_retention_ai_subprocessors
+  version: 1
+  topic: privacy
+  claim: Willow states customer content is processed without retention by Willow or its applicable AI subprocessors.
+  source_id: comp_willow_security
+  source_quote: processed without retention by Willow or our applicable AI subprocessors
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: willow_enterprise_contractual_retention_controls
+  version: 1
+  topic: legal
+  claim: Willow states it has contractual controls in place for enterprise teams on customer content retention.
+  source_id: comp_willow_security
+  source_quote: with contractual controls in place for enterprise teams
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: willow_encrypt_transit_and_rest
+  version: 1
+  topic: security
+  claim: Willow states all data is encrypted in transit and at rest.
+  source_id: comp_willow_security
+  source_quote: All data is encrypted in transit and at rest.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: willow_us_cloud_infrastructure
+  version: 1
+  topic: security
+  claim: Willow states it runs on secure cloud infrastructure in the United States.
+  source_id: comp_willow_security
+  source_quote: runs on secure cloud infrastructure in the United States
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: willow_audit_logging_control
+  version: 1
+  topic: security
+  claim: Willow states it includes audit logging among its security controls.
+  source_id: comp_willow_security
+  source_quote: including encryption, access controls, audit logging, and privacy-by-design
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: willow_subprocessor_details_on_request
+  version: 1
+  topic: compliance
+  claim: Willow states enterprise customers can request subprocessor details during review.
+  source_id: comp_willow_security
+  source_quote: Enterprise customers can request our security documentation, compliance report, and subprocessor details
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: sso_saml_login
+  version: 1
+  topic: security
+  claim: Willow lets users sign in with an existing identity provider using SAML-based SSO.
+  source_id: comp_willow_teams
+  source_quote: Let users sign in securely with your existing identity provider using SAML-based SSO.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: sso_enforce_admin
+  version: 1
+  topic: security
+  claim: Admins can enforce SSO for users.
+  source_id: comp_willow_teams
+  source_quote: Admins can enforce SSO and provision/deprovision users with SCIM.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: scim_user_provisioning
+  version: 1
+  topic: security
+  claim: Willow supports SCIM to automatically add, remove and manage users.
+  source_id: comp_willow_teams
+  source_quote: Automatically add, remove, and manage users as your team changes.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: zdr_enforced_all_subprocessors
+  version: 1
+  topic: privacy
+  claim: Zero data retention is enforced by Willow and all of its sub-processors.
+  source_id: comp_willow_teams
+  source_quote: Enforced zero data retention by Willow and all sub-processors.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: zdr_model_provider_agreements
+  version: 1
+  topic: privacy
+  claim: Willow maintains zero data retention agreements with all of its model providers.
+  source_id: comp_willow_teams
+  source_quote: Willow also maintains zero data retention agreements with all our model providers.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: privacy_mode_no_training
+  version: 1
+  topic: privacy
+  claim: With Privacy Mode enabled org-wide, customer code is never used for training, per the page.
+  source_id: comp_willow_teams
+  source_quote: With Privacy Mode enabled org-wide, your code is never used for training.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: enterprise_plan_compliance_options
+  version: 1
+  topic: compliance
+  claim: The page lists SOC 2 Type II, HIPAA, SSO, enforced Privacy Mode and Zero Data Retention as Enterprise Plan options.
+  source_id: comp_willow_teams
+  source_quote: like SOC 2 Type II, HIPAA, SSO, enforced Privacy Mode, or Zero Data Retention
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: regular_penetration_testing
+  version: 1
+  topic: security
+  claim: Willow performs regular penetration testing.
+  source_id: comp_willow_teams
+  source_quote: HIPAA certified with regular penetration testing
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: hipaa_business_associate_agreements
+  version: 1
+  topic: legal
+  claim: Willow offers Business Associate Agreements for HIPAA-regulated teams.
+  source_id: comp_willow_teams
+  source_quote: supports HIPAA-regulated teams with enterprise controls, privacy safeguards, and Business Associate Agreements
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: hipaa_status_inconsistent
+  version: 1
+  topic: compliance
+  claim: The page calls Willow HIPAA certified in one FAQ answer but uses the label HIPAA Ready elsewhere. HIPAA status needs confirmation.
+  source_id: comp_willow_teams
+  source_quote: Willow is SOC 2 Type II and HIPAA certified
+  checked: '2026-11-05'
+  status: unknown
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: usage_dashboard_by_individual
+  version: 1
+  topic: privacy
+  claim: The enterprise analytics dashboard shows usage patterns by team and by individual.
+  source_id: comp_willow_teams
+  source_quote: usage patterns by team and individual
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: enterprise_analytics_dashboard
+  version: 1
+  topic: governance
+  claim: Enterprise administrators have an analytics dashboard for adoption and usage.
+  source_id: comp_willow_teams
+  source_quote: Enterprise administrators have access to a comprehensive analytics dashboard
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: usage_data_export
+  version: 1
+  topic: governance
+  claim: Usage data can be exported as CSV or through the usage API.
+  source_id: comp_willow_teams
+  source_quote: Data can be exported through CSV and our usage API
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: admin_org_wide_controls
+  version: 1
+  topic: governance
+  claim: Admins can configure privacy settings, access rules and admin permissions across the whole organization.
+  source_id: comp_willow_teams
+  source_quote: Configure privacy settings, access rules, and admin permissions across your entire organization
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: audit_logs_admin_roles_only
+  version: 1
+  topic: governance
+  claim: Audit Logs requires an enterprise Admin, SuperAdmin, or IT Admin role.
+  source_id: docs_audit_logs
+  source_quote: Audit Logs requires an enterprise Admin, SuperAdmin, or IT Admin role
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: audit_logs_records_membership_changes
+  version: 1
+  topic: governance
+  claim: Audit Logs records who changed membership, roles, invitations, or join requests.
+  source_id: docs_audit_logs
+  source_quote: Audit Logs shows who changed membership, roles, invitations, or join requests
+  checked: '2026-11-05'
+  status: retired
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+  retired_on: '2026-11-07'
+- id: audit_logs_export_cap_10000
+  version: 1
+  topic: governance
+  claim: Audit log exports are limited to about 10,000 events regardless of page size.
+  source_id: docs_audit_logs
+  source_quote: up to about 10,000 events regardless of page size
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: audit_logs_recording_not_switchable
+  version: 1
+  topic: compliance
+  claim: Once audit recording is set up, it cannot be switched off for an enterprise.
+  source_id: docs_audit_logs
+  source_quote: audit recording cannot be switched off per enterprise
+  checked: '2026-11-05'
+  status: retired
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+  retired_on: '2026-11-07'
+- id: audit_logs_events_can_be_lost
+  version: 1
+  topic: compliance
+  claim: Audit events can be lost during recording.
+  source_id: docs_audit_logs
+  source_quote: events can be lost during recording
+  checked: '2026-11-05'
+  status: retired
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+  approver_note: audit events can be lost
+  retired_on: '2026-11-07'
+- id: audit_logs_siem_enterprise_plan
+  version: 1
+  topic: product
+  claim: SIEM configuration requires an Enterprise plan and streaming access.
+  source_id: docs_audit_logs
+  source_quote: SIEM configuration requires an Enterprise plan and streaming access
+  checked: '2026-11-05'
+  status: retired
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+  retired_on: '2026-11-07'
+- id: baa_revoke_settings_not_restored
+  version: 1
+  topic: privacy
+  claim: Revoking a personal BAA removes BAA enforcement but does not restore the storage and sharing settings.
+  source_id: docs_baa_revoke
+  source_quote: Revoking removes personal-BAA enforcement but does not restore those settings
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: baa_revoke_marked_not_deleted
+  version: 1
+  topic: privacy
+  claim: Revoking a personal BAA marks the BAA as revoked and does not delete it.
+  source_id: docs_baa_revoke
+  source_quote: Revoking marks your BAA as revoked rather than deleting it.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: baa_records_excluded_from_export
+  version: 1
+  topic: privacy
+  claim: BAA records are not part of the user data export.
+  source_id: docs_baa_revoke
+  source_quote: BAA records are not part of your data export
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: baa_records_retained_after_deletion
+  version: 1
+  topic: privacy
+  claim: BAA records remain retained after usage-data deletion or account deletion.
+  source_id: docs_baa_revoke
+  source_quote: remain retained after usage-data deletion or account deletion
+  checked: '2026-11-05'
+  status: retired
+  plan_scope:
+  - unknown
+  conflicts_with: []
+  retired_on: '2026-11-07'
+- id: baa_signature_record_not_certificate
+  version: 1
+  topic: legal
+  claim: The Signature Record page in the signed BAA PDF is for reference, not a legal certificate.
+  source_id: docs_baa_revoke
+  source_quote: that page is for reference, not a legal certificate
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: baa_live_billing_admin_managed
+  version: 1
+  topic: governance
+  claim: Organizations with live billing require admin management of the BAA, and self-serve signing and revoking are blocked.
+  source_id: docs_baa_revoke
+  source_quote: Organizations with live billing require admin management instead
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: baa_personal_model_training_off
+  version: 1
+  topic: privacy
+  claim: A personal BAA means the HIPAA agreement does not allow data to be used for model training.
+  source_id: docs_baa_revoke
+  source_quote: Your HIPAA agreement does not allow data to be used for model training.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: baa_signing_turns_storage_off
+  version: 1
+  topic: privacy
+  claim: Signing a personal BAA turns Dictation cloud storage off for the account.
+  source_id: docs_baa_revoke
+  source_quote: and Dictation cloud storage off for your account
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: baa_org_admin_portal_only
+  version: 1
+  topic: governance
+  claim: Admins manage the org BAA in the Admin Portal, not the desktop app.
+  source_id: docs_baa_revoke
+  source_quote: not the desktop app
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: baa_org_signing_requires_enterprise
+  version: 1
+  topic: pricing
+  claim: Signing an org BAA requires an active enterprise subscription.
+  source_id: docs_baa_revoke
+  source_quote: Signing requires an active enterprise subscription
+  checked: '2026-11-05'
+  status: conflicting
+  plan_scope:
+  - enterprise
+  conflicts_with:
+  - growth_enterprise_include_baa
+  - baa_inproduct_signing_enterprise_admin
+  - growth_org_wide_hipaa_enforcement
+- id: baa_org_keeps_storage_locked
+  version: 1
+  topic: privacy
+  claim: An org BAA keeps storage locked after a personal BAA is revoked.
+  source_id: docs_baa_revoke
+  source_quote: An org BAA keeps storage locked after a personal revoke
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: baa_personal_revoke_keeps_org_limits
+  version: 1
+  topic: governance
+  claim: Personal revocation does not remove organization restrictions.
+  source_id: docs_baa_revoke
+  source_quote: personal revocation does not remove organization restrictions
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: ca_platform_support
+  version: 1
+  topic: product
+  claim: Context Awareness is available on Mac, Windows, and iOS, with iOS limited to the focused text field.
+  source_id: docs_context_awareness
+  source_quote: Mac, Windows, iOS (limited to the focused text field)
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: ca_on_by_default
+  version: 1
+  topic: consent
+  claim: Context Awareness is on by default.
+  source_id: docs_context_awareness
+  source_quote: on by default
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: ca_no_screenshots
+  version: 1
+  topic: privacy
+  claim: Context Awareness works from text and does not take screenshots.
+  source_id: docs_context_awareness
+  source_quote: Flow works from text and does not take screenshots.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: ca_context_includes_textbox
+  version: 1
+  topic: privacy
+  claim: When Context Awareness is on, context can include textbox contents and on-screen text.
+  source_id: docs_context_awareness
+  source_quote: textbox contents (before, selected, and after the cursor), on-screen text
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: ca_context_includes_user_identifier
+  version: 1
+  topic: privacy
+  claim: When Context Awareness is on, context can include the user's identifier within the app.
+  source_id: docs_context_awareness
+  source_quote: your user identifier within the app
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: ca_context_cleared_after_dictation
+  version: 1
+  topic: privacy
+  claim: Captured text, extracted names and counts are cleared when each dictation ends.
+  source_id: docs_context_awareness
+  source_quote: extracted names, and counts for a dictation are cleared when that dictation ends
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: ca_password_fields_excluded
+  version: 1
+  topic: security
+  claim: Password field contents are never read or included in context.
+  source_id: docs_context_awareness
+  source_quote: Password field contents are never read or included in context
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: ca_custom_password_fields_may_read
+  version: 1
+  topic: security
+  claim: Custom or web-based password fields may be read like normal text fields.
+  source_id: docs_context_awareness
+  source_quote: custom or web-based password fields may be read like normal text fields
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: ca_sensitive_fields_excluded
+  version: 1
+  topic: security
+  claim: Flow excludes sensitive and numeric-only fields and browser URL bars from context reading.
+  source_id: docs_context_awareness
+  source_quote: Flow excludes sensitive and numeric-only fields and browser URL bars
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: ca_banking_apps_and_flow_skipped
+  version: 1
+  topic: security
+  claim: Context reading is skipped in banking and financial apps and inside Wispr Flow itself.
+  source_id: docs_context_awareness
+  source_quote: skips context reading entirely in banking and financial apps and inside Wispr Flow
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: ca_matching_on_device
+  version: 1
+  topic: privacy
+  claim: On Mac and Windows, casing and punctuation matching happens on the user's device.
+  source_id: docs_context_awareness
+  source_quote: On Mac and Windows this matching happens on your device
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: ca_off_still_sends_app_and_domain
+  version: 1
+  topic: privacy
+  claim: With Context Awareness off, on Mac and Windows Flow still sends the app name and website domain with each dictation.
+  source_id: docs_context_awareness
+  source_quote: Flow still sends the app name and website domain with each dictation
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: ca_off_no_other_onscreen_text
+  version: 1
+  topic: privacy
+  claim: With Context Awareness off, no on-screen text beyond the text near the cursor is read.
+  source_id: docs_context_awareness
+  source_quote: no other on-screen text is read
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: ca_command_mode_sends_text
+  version: 1
+  topic: privacy
+  claim: Command Mode and Polish send the text being edited so it can be changed, even when Context Awareness is off.
+  source_id: docs_context_awareness
+  source_quote: Command Mode and Polish send the text
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: ca_improve_model_default_by_plan
+  version: 1
+  topic: consent
+  claim: The Improve the model for everyone setting is on by default for Free and Pro and off for Enterprise.
+  source_id: docs_context_awareness
+  source_quote: on by default for Free and Pro, off for Enterprise
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - free
+  - pro
+  - enterprise
+  conflicts_with: []
+- id: ca_improve_model_off_keeps_context_awareness
+  version: 1
+  topic: consent
+  claim: Turning off Improve the model for everyone does not turn off Context Awareness.
+  source_id: docs_context_awareness
+  source_quote: does not turn off Context Awareness
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: ca_enterprise_disable_for_all_users
+  version: 1
+  topic: governance
+  claim: On Enterprise, the Disable for all users option turns Context Awareness off for everyone on Mac and Windows and locks the setting.
+  source_id: docs_context_awareness
+  source_quote: which turns it off for everyone on Mac and Windows and locks the setting
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: ca_growth_admins_cannot_enforce_off
+  version: 1
+  topic: governance
+  claim: On Growth, each person controls their own Context Awareness setting and administrators cannot enforce it off.
+  source_id: docs_context_awareness
+  source_quote: each person controls their own setting and administrators cannot enforce it off
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - growth
+  conflicts_with: []
+- id: ca_hipaa_compatible
+  version: 1
+  topic: compliance
+  claim: Context Awareness is compatible with HIPAA workflows, according to the page.
+  source_id: docs_context_awareness
+  source_quote: It is compatible with HIPAA workflows
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: ca_baa_locks_settings
+  version: 1
+  topic: compliance
+  claim: Signing the applicable Business Associate Agreement (BAA) locks Improve the model for everyone and Dictation Cloud Storage off.
+  source_id: docs_context_awareness
+  source_quote: sign the applicable Business Associate Agreement (BAA), which locks
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: ca_iphone_keyboard_sends_context
+  version: 1
+  topic: privacy
+  claim: On iPhone, the keyboard sends the text before and after the cursor, any selected text, and the app name with each dictation.
+  source_id: docs_context_awareness
+  source_quote: The keyboard sends the text before and after your cursor
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: ca_sensitive_environments_turn_off
+  version: 1
+  topic: compliance
+  claim: For sensitive environments such as legal, healthcare, or regulated data, the page advises turning Context Awareness off.
+  source_id: docs_context_awareness
+  source_quote: For sensitive environments (legal, healthcare, or regulated data), turn Context Awareness off
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: export_request_email_notice
+  version: 1
+  topic: privacy
+  claim: Wispr emails the account user whenever an export is requested on the account.
+  source_id: docs_data_requests
+  source_quote: we email you whenever an export is requested on your account.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: export_download_expires_30_days
+  version: 1
+  topic: privacy
+  claim: An export download stays available for 30 days, then expires.
+  source_id: docs_data_requests
+  source_quote: the download stays available for 30 days, then expires
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: export_any_signed_in_user
+  version: 1
+  topic: security
+  claim: Anyone signed in to a user's account can request an export of its data.
+  source_id: docs_data_requests
+  source_quote: Anyone signed in to your account can request an export.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: delete_account_removes_data
+  version: 1
+  topic: privacy
+  claim: Deleting an account removes dictation history, audio, meeting content, notes, dictionary, preferences and usage history.
+  source_id: docs_data_requests
+  source_quote: This removes your account along with your dictation history, audio, meeting content, notes
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: delete_account_provider_instruction
+  version: 1
+  topic: privacy
+  claim: On account deletion, Wispr instructs the providers that process data on its behalf to delete it.
+  source_id: docs_data_requests
+  source_quote: We also instruct the providers that process data on our behalf to delete it.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: delete_account_cancels_billed_subscription
+  version: 1
+  topic: pricing
+  claim: Deleting an account cancels an active Wispr-billed subscription immediately, with no refund.
+  source_id: docs_data_requests
+  source_quote: cancels an active Wispr-billed subscription immediately, with no refund
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: delete_account_other_device_history
+  version: 1
+  topic: privacy
+  claim: Deleting an account does not remove local history on the user's other devices.
+  source_id: docs_data_requests
+  source_quote: history on your other devices is not removed
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: delete_account_android_no_in_app
+  version: 1
+  topic: product
+  claim: Android has no in-app account deletion.
+  source_id: docs_data_requests
+  source_quote: Android has no in-app deletion.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: delete_data_keep_account_mac_windows
+  version: 1
+  topic: privacy
+  claim: On Mac and Windows, a user can delete their data while the account, sign-in, settings and subscription stay active.
+  source_id: docs_data_requests
+  source_quote: you can delete your data while your account, sign-in, settings and subscription stay active
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: delete_data_is_permanent
+  version: 1
+  topic: privacy
+  claim: Deleting data in Wispr is permanent and cannot be reversed.
+  source_id: docs_data_requests
+  source_quote: Deletion is permanent and cannot be reversed.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: delete_completion_up_to_thirty_days
+  version: 1
+  topic: privacy
+  claim: Deletion may take up to thirty days to complete.
+  source_id: docs_data_requests
+  source_quote: Deletion may take up to thirty days to complete.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: delete_retains_billing_records
+  version: 1
+  topic: compliance
+  claim: Wispr keeps billing and invoice records after deletion.
+  source_id: docs_data_requests
+  source_quote: Billing and invoice records.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: delete_retains_signed_agreements
+  version: 1
+  topic: compliance
+  claim: Wispr keeps signed agreements, such as a HIPAA Business Associate Agreement, after deletion.
+  source_id: docs_data_requests
+  source_quote: Signed agreements, such as a HIPAA Business Associate Agreement.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: delete_retains_organization_records
+  version: 1
+  topic: governance
+  claim: Wispr keeps organization records and shared support accounts after deletion when Flow was used through an organization.
+  source_id: docs_data_requests
+  source_quote: Organization records and shared support accounts, if you used Flow through an organization.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: work_account_organization_controls_data
+  version: 1
+  topic: governance
+  claim: When an organization provides the Flow account, the organization controls that account's data.
+  source_id: docs_data_requests
+  source_quote: If your organization provided your Flow account, your organization controls that data.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: work_account_request_via_admin
+  version: 1
+  topic: governance
+  claim: For work accounts, data requests go to the user's admin or IT team, which instructs Wispr.
+  source_id: docs_data_requests
+  source_quote: Send your request to your admin or IT team
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: default_on_both_data_switches
+  version: 1
+  topic: consent
+  claim: Both data-sharing switches default to on unless an organization restricts them.
+  source_id: docs_data_sharing
+  source_quote: Both switches default to on unless restricted
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: model_improvement_off_withholds_content
+  version: 1
+  topic: privacy
+  claim: With model improvement off, audio, transcripts, edits and other personal content are withheld from model improvement and evaluation.
+  source_id: docs_data_sharing
+  source_quote: For model improvement and evaluation, audio, transcripts, edits and other personal content are withheld
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: model_improvement_off_metadata_still_uploaded
+  version: 1
+  topic: privacy
+  claim: With model improvement off, Flow still uploads dictation details such as word count, duration, app, URL and timestamp.
+  source_id: docs_data_sharing
+  source_quote: Flow still uploads dictation details such as word count, duration
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: model_improvement_off_no_stop_cloud_processing
+  version: 1
+  topic: privacy
+  claim: Turning off model improvement does not stop cloud processing.
+  source_id: docs_data_sharing
+  source_quote: Turning it off does not stop cloud processing
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: confidential_content_turn_off_before_recording
+  version: 1
+  topic: privacy
+  claim: For confidential or privileged content, the page advises turning model improvement off before recording.
+  source_id: docs_data_sharing
+  source_quote: For confidential or privileged content, turn
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: reported_dictation_retained_by_wispr
+  version: 1
+  topic: privacy
+  claim: A dictation a user chooses to report is retained by Wispr.
+  source_id: docs_data_sharing
+  source_quote: A dictation you choose to report is retained by Wispr
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: reported_dictation_used_for_training
+  version: 1
+  topic: privacy
+  claim: A reported dictation can be used by Wispr to train and evaluate its models.
+  source_id: docs_data_sharing
+  source_quote: can be used to train and evaluate its models
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: wispr_does_not_sell_user_data
+  version: 1
+  topic: privacy
+  claim: Wispr does not sell user data.
+  source_id: docs_data_sharing
+  source_quote: Wispr does not sell your data
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: dictation_cloud_storage_stores_history_on_servers
+  version: 1
+  topic: privacy
+  claim: Dictation cloud storage stores dictation transcripts, audio and history on Wispr's servers for cross-device access.
+  source_id: docs_data_sharing
+  source_quote: Stores dictation transcripts, audio and history on Wispr's servers
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: notetaker_transcripts_stored_in_cloud
+  version: 1
+  topic: privacy
+  claim: Notetaker transcripts and summaries are stored in Wispr's cloud.
+  source_id: docs_data_sharing
+  source_quote: Notetaker transcripts and summaries are stored in Wispr's cloud
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: notetaker_cloud_storage_no_opt_out
+  version: 1
+  topic: consent
+  claim: Notetaker transcripts and summaries have no setting to opt out of cloud storage.
+  source_id: docs_data_sharing
+  source_quote: with no setting to opt out
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: hipaa_baa_locks_sharing_off
+  version: 1
+  topic: compliance
+  claim: A signed HIPAA Business Associate Agreement locks data sharing off.
+  source_id: docs_data_sharing
+  source_quote: A signed HIPAA Business Associate Agreement (BAA) locks sharing off
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: personal_or_org_baa_locks_cloud_storage_off
+  version: 1
+  topic: compliance
+  claim: A personal or organization BAA locks dictation cloud storage off, even if another organization setting permits sharing.
+  source_id: docs_data_sharing
+  source_quote: A personal or organization BAA locks
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: enterprise_sharing_off_no_model_training
+  version: 1
+  topic: privacy
+  claim: On Enterprise, sharing stays off, so Wispr does not use those organizations' dictation content to improve its models.
+  source_id: docs_data_sharing
+  source_quote: On Enterprise, sharing stays off, so Wispr does not use
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: enterprise_model_training_off_for_everyone
+  version: 2
+  topic: governance
+  claim: Enterprise model training is off for everyone, with no enable switch.
+  source_id: docs_data_sharing
+  source_quote: Enterprise model training is Off for everyone , with no enable switch;
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: teams_pro_model_training_managed_individually
+  version: 1
+  topic: governance
+  claim: For Teams and Pro, model training is managed individually, so each member decides.
+  source_id: docs_data_sharing
+  source_quote: with no enable switch; Teams and Pro show
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - teams
+  - pro
+  conflicts_with: []
+- id: enforce_off_for_everyone_requires_enterprise
+  version: 1
+  topic: governance
+  claim: Enforcing model training off for everyone requires upgrading to Enterprise.
+  source_id: docs_data_sharing
+  source_quote: so each member decides, and enforcing off for everyone requires upgrading to Enterprise
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - teams
+  - pro
+  conflicts_with: []
+- id: enforce_zero_retention_enterprise_admins_only
+  version: 1
+  topic: governance
+  claim: Only Enterprise admins can change Enforce zero data retention, unless Wispr has locked it or a signed BAA prevents disabling it.
+  source_id: docs_data_sharing
+  source_quote: only Enterprise admins can change it, unless Wispr has locked it
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: notetaker_works_alongside_baa
+  version: 1
+  topic: compliance
+  claim: Notetaker works alongside a signed BAA, so the user does not need to revoke the BAA to record meetings.
+  source_id: docs_data_sharing
+  source_quote: Notetaker works alongside a signed personal or organization BAA
+  checked: '2026-11-05'
+  status: conflicting
+  plan_scope:
+  - unknown
+  conflicts_with:
+  - security_notetaker_disabled_baa
+- id: revoking_baa_does_not_restore_sharing
+  version: 1
+  topic: compliance
+  claim: Revoking a BAA does not turn sharing or dictation cloud storage back on.
+  source_id: docs_data_sharing
+  source_quote: it does not turn sharing or dictation cloud storage back on
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: sign_out_resets_cloud_storage_to_on
+  version: 1
+  topic: privacy
+  claim: Signing out resets the cloud-storage preference to on.
+  source_id: docs_data_sharing
+  source_quote: Signing out resets the cloud-storage preference to on
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+  approver_note: sign-out resets cloud storage to on
+- id: unconfirmed_preference_no_audio_sharing
+  version: 1
+  topic: privacy
+  claim: If Flow cannot confirm a sharing preference, agreement or organization policy, it does not share dictation audio.
+  source_id: docs_data_sharing
+  source_quote: it does not share dictation audio
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: dictation_controls_platforms
+  version: 1
+  topic: product
+  claim: The data sharing and cloud storage controls are available on Mac, Windows, iOS and Android.
+  source_id: docs_data_sharing
+  source_quote: Mac, Windows, iOS and Android
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: dpa_available_every_plan
+  version: 1
+  topic: legal
+  claim: The standard DPA is available to every dashboard member on every plan, including non-admins.
+  source_id: docs_dpa
+  source_quote: available to every dashboard member on every plan, including non-admins
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - all
+  conflicts_with: []
+- id: dpa_no_nda_required
+  version: 1
+  topic: legal
+  claim: Getting the DPA requires no NDA acceptance.
+  source_id: docs_dpa
+  source_quote: No separate portal sign-in, company-email address, or NDA acceptance is required.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: dpa_billing_separate_url
+  version: 1
+  topic: legal
+  claim: Billing pages link to a different DPA URL, wisprflow.ai/legal/dpa.
+  source_id: docs_dpa
+  source_quote: 'Billing pages use a different DPA URL:'
+  checked: '2026-11-05'
+  status: conflicting
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: dpa_eu_scc_included
+  version: 1
+  topic: legal
+  claim: The DPA includes the EU Standard Contractual Clauses for transfers out of the EEA.
+  source_id: docs_dpa
+  source_quote: EU Standard Contractual Clauses (SCCs) for transfers of personal data
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: dpa_uk_addendum_included
+  version: 1
+  topic: legal
+  claim: The DPA includes a UK Addendum for transfers subject to the UK GDPR.
+  source_id: docs_dpa
+  source_quote: A UK Addendum for transfers subject to the UK GDPR.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: dpa_annex_iii_subprocessors
+  version: 1
+  topic: privacy
+  claim: The DPA includes Annex III, which lists current subprocessors.
+  source_id: docs_dpa
+  source_quote: Annex III, listing current subprocessors.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: dpa_subprocessor_notice_10_days
+  version: 1
+  topic: privacy
+  claim: Wispr gives at least 10 days' prior written notice before adding a new subprocessor; the page says to confirm this against the DPA PDF.
+  source_id: docs_dpa
+  source_quote: Wispr gives at least 10 days' prior written notice before adding a new subprocessor.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: dpa_tia_not_provided_by_wispr
+  version: 1
+  topic: legal
+  claim: Wispr does not provide a Transfer Impact Assessment.
+  source_id: docs_dpa
+  source_quote: No. Under the SCC framework, you carry out the TIA
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: dpa_tia_customer_controller_duty
+  version: 1
+  topic: legal
+  claim: Under the SCC framework, the customer carries out the TIA as data controller.
+  source_id: docs_dpa
+  source_quote: you carry out the TIA as the data controller
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: dpa_tia_wispr_support
+  version: 1
+  topic: legal
+  claim: Wispr supports the customer's TIA with the DPA, including the SCCs and Annex III.
+  source_id: docs_dpa
+  source_quote: Wispr supports it with the DPA (including the SCCs and Annex III)
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: soc2_card_enterprise_only
+  version: 1
+  topic: compliance
+  claim: The SOC 2 and HIPAA compliance card on Privacy requires an Enterprise plan.
+  source_id: docs_dpa
+  source_quote: is the only card requiring an Enterprise plan
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: dpa_customer_data_processed_us
+  version: 1
+  topic: privacy
+  claim: All customer data is processed in the United States.
+  source_id: docs_dpa
+  source_quote: All customer data is processed in the United States;
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: dpa_no_eea_apac_regional_processing
+  version: 1
+  topic: privacy
+  claim: There is no regional processing in the EEA or Asia-Pacific.
+  source_id: docs_dpa
+  source_quote: there is no regional processing in the EEA or Asia-Pacific
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: dpa_org_legal_contact_email
+  version: 1
+  topic: legal
+  claim: Organization or legal DPA requests go to enterprise@wispr.ai.
+  source_id: docs_dpa
+  source_quote: For organization or legal requests, contact
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: phi_requires_data_sharing_off
+  version: 1
+  topic: privacy
+  claim: To dictate PHI, turn off Flow's data-sharing controls.
+  source_id: docs_hipaa
+  source_quote: To dictate protected health information (PHI), turn off Flow's data-sharing controls
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: phi_requires_signed_baa
+  version: 1
+  topic: compliance
+  claim: To dictate PHI, sign the applicable Business Associate Agreement.
+  source_id: docs_hipaa
+  source_quote: sign the applicable Business Associate Agreement (BAA)
+  checked: '2026-11-05'
+  status: retired
+  plan_scope:
+  - unknown
+  conflicts_with: []
+  retired_on: '2026-11-07'
+- id: model_improvement_controls_dictation_use
+  version: 1
+  topic: consent
+  claim: The Improve the model for everyone setting controls whether Notetaker and dictation content may be used to improve Wispr's models.
+  source_id: docs_hipaa
+  source_quote: may be used to improve Wispr's models
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: signed_baa_locks_both_controls_off
+  version: 1
+  topic: compliance
+  claim: A signed BAA locks both the model-improvement and dictation cloud storage controls off.
+  source_id: docs_hipaa
+  source_quote: A signed BAA locks both controls off
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: org_model_restriction_not_cloud_storage
+  version: 1
+  topic: governance
+  claim: An organization model-improvement restriction alone does not mean dictation cloud storage is off.
+  source_id: docs_hipaa
+  source_quote: An organization model-improvement restriction alone does not mean cloud storage is off
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: growth_enterprise_model_improvement_locked
+  version: 1
+  topic: governance
+  claim: On Growth and Enterprise, the model-improvement setting is locked off organization-wide.
+  source_id: docs_hipaa
+  source_quote: is locked off organization-wide
+  checked: '2026-11-05'
+  status: conflicting
+  plan_scope:
+  - growth
+  - enterprise
+  conflicts_with:
+  - growth_admin_model_training_control
+- id: enterprise_admin_enforce_cloud_storage
+  version: 1
+  topic: governance
+  claim: Enterprise admins can also enforce the dictation cloud storage setting.
+  source_id: docs_hipaa
+  source_quote: Enterprise admins can also enforce
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: unconfirmed_org_settings_forced_off
+  version: 1
+  topic: governance
+  claim: When an organization account's settings cannot be confirmed, model improvement and dictation cloud storage are forced off until the settings resolve.
+  source_id: docs_hipaa
+  source_quote: are forced off until the settings resolve
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: baa_ai_text_providers_covered
+  version: 1
+  topic: privacy
+  claim: Under a BAA, text from AI text features is only processed by AI providers covered by Wispr's BAA.
+  source_id: docs_hipaa
+  source_quote: their text is only ever processed by AI providers covered by Wispr's BAA
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: revocation_removes_settings_locks
+  version: 1
+  topic: compliance
+  claim: Revoking a BAA removes the agreement's settings locks.
+  source_id: docs_hipaa
+  source_quote: Revoking removes the agreement's settings locks
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: growth_enterprise_include_baa
+  version: 1
+  topic: compliance
+  claim: Growth and Enterprise both include a standard HIPAA BAA.
+  source_id: docs_hipaa
+  source_quote: Growth and Enterprise both include a standard HIPAA BAA
+  checked: '2026-11-05'
+  status: retired
+  plan_scope:
+  - growth
+  - enterprise
+  conflicts_with:
+  - baa_org_signing_requires_enterprise
+  - baa_inproduct_signing_enterprise_admin
+  - growth_org_wide_hipaa_enforcement
+  retired_on: '2026-11-07'
+- id: msa_redlines_enterprise_only
+  version: 1
+  topic: legal
+  claim: MSA redlines or custom signed BAA documentation require the Enterprise plan and go through the sales representative.
+  source_id: docs_hipaa
+  source_quote: MSA redlines or custom signed documentation require our highest-tier Enterprise plan
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: wispr_no_countersign
+  version: 1
+  topic: legal
+  claim: Wispr does not countersign BAAs.
+  source_id: docs_hipaa
+  source_quote: Wispr does not countersign BAAs
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: baa_signing_platforms
+  version: 1
+  topic: product
+  claim: BAA signing is available on Mac, Windows and iOS.
+  source_id: docs_hipaa
+  source_quote: BAA signing is available on Mac, Windows and iOS
+  checked: '2026-11-05'
+  status: retired
+  plan_scope:
+  - unknown
+  conflicts_with: []
+  retired_on: '2026-11-07'
+- id: android_no_baa_signing
+  version: 1
+  topic: product
+  claim: Android has no BAA signing or revocation flow.
+  source_id: docs_hipaa
+  source_quote: Android has no BAA signing or revocation flow
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: pdf_may_not_match_agreement
+  version: 1
+  topic: legal
+  claim: The signed BAA PDF may not match the agreement text at signing.
+  source_id: docs_hipaa
+  source_quote: the PDF may not match the agreement text at signing
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+  approver_note: signed BAA PDF may not match agreement text
+- id: phi_not_in_support_feedback
+  version: 1
+  topic: privacy
+  claim: Users should not include PHI in support feedback.
+  source_id: docs_hipaa
+  source_quote: Do not include PHI in support feedback
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: feedback_logs_not_filtered
+  version: 1
+  topic: privacy
+  claim: General feedback logs are not filtered.
+  source_id: docs_hipaa
+  source_quote: general feedback logs are not filtered
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: org_members_no_personal_baa
+  version: 1
+  topic: governance
+  claim: Members of organizations with active billing cannot sign personal BAAs and must ask their admin.
+  source_id: docs_hipaa
+  source_quote: Members of organizations with active billing cannot sign personal BAAs
+  checked: '2026-11-05'
+  status: retired
+  plan_scope:
+  - unknown
+  conflicts_with: []
+  retired_on: '2026-11-07'
+- id: typed_feedback_not_stripped_by_baa
+  version: 1
+  topic: privacy
+  claim: Typed in-app feedback is not stripped by the data-sharing settings or a BAA.
+  source_id: docs_hipaa
+  source_quote: is not stripped by these settings or a BAA
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: docs_network_domain_list_incomplete
+  version: 1
+  topic: security
+  claim: The page says the listed outbound domains are not the complete outbound host list.
+  source_id: docs_network
+  source_quote: This is not the complete outbound host list
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: docs_network_root_certificates_respected
+  version: 1
+  topic: security
+  claim: Flow respects organizational root certificates, including TLS inspection, for dictation.
+  source_id: docs_network
+  source_quote: Flow respects system proxy settings and organizational root certificates, including TLS inspection
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: docs_network_bypass_tls_stays_enabled
+  version: 1
+  topic: security
+  claim: On the dictation inspection bypass, TLS stays enabled and the gateway stops intercepting and re-encrypting the connections.
+  source_id: docs_network
+  source_quote: TLS stays enabled. The gateway stops intercepting and re-encrypting these connections
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: docs_network_dlp_cannot_inspect_bypass
+  version: 1
+  topic: compliance
+  claim: DLP tools that need decrypted traffic cannot inspect the bypassed Flow endpoints.
+  source_id: docs_network
+  source_quote: DLP tools that need decrypted traffic cannot inspect these endpoints
+  checked: '2026-11-05'
+  status: retired
+  plan_scope:
+  - unknown
+  conflicts_with: []
+  retired_on: '2026-11-06'
+- id: docs_network_wildcard_list_required
+  version: 1
+  topic: security
+  claim: The dictation bypass needs the complete wildcard destination list, including *.wisprflow.com.
+  source_id: docs_network
+  source_quote: Use the complete wildcard destination list, including *.wisprflow.com
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: docs_network_destinations_change
+  version: 1
+  topic: security
+  claim: Dictation destinations can change without an app update and can differ between users.
+  source_id: docs_network
+  source_quote: Destinations can change without an app update and differ between colleagues
+  checked: '2026-11-05'
+  status: retired
+  plan_scope:
+  - unknown
+  conflicts_with: []
+  retired_on: '2026-11-06'
+- id: docs_network_ip_allowlist_enterprise_only
+  version: 1
+  topic: product
+  claim: The IP allowlist appears only for Enterprise organizations enabled by Wispr.
+  source_id: docs_network
+  source_quote: IP allowlist appears only for Enterprise organizations enabled by Wispr
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: docs_network_ip_allowlist_not_android_speech
+  version: 1
+  topic: security
+  claim: The IP allowlist is not enforced on Android or on the speech-processing service.
+  source_id: docs_network
+  source_quote: is not enforced on Android or on the speech-processing service
+  checked: '2026-11-05'
+  status: retired
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+  retired_on: '2026-11-06'
+- id: docs_network_ip_allowlist_signed_in_only
+  version: 1
+  topic: security
+  claim: IP allowlist restrictions apply to signed-in access, not anonymous use.
+  source_id: docs_network
+  source_quote: Restrictions apply to signed-in access, not anonymous use
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: docs_network_ip_allowlist_fail_open
+  version: 1
+  topic: security
+  claim: IP allowlist restrictions are not applied if Flow cannot validate a saved list.
+  source_id: docs_network
+  source_quote: or validate a saved list, restrictions are not applied
+  checked: '2026-11-05'
+  status: retired
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+  approver_note: IP allowlist fails open
+  retired_on: '2026-11-06'
+- id: docs_network_block_unapproved_signout
+  version: 1
+  topic: security
+  claim: Flow signs Mac and Windows users out when their network is unapproved.
+  source_id: docs_network
+  source_quote: Flow signs Mac and Windows users out when their network is unapproved
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: docs_network_block_stops_notetaker
+  version: 1
+  topic: product
+  claim: Blocking a network stops any in-progress Notetaker recording.
+  source_id: docs_network
+  source_quote: stops any in-progress Notetaker recording
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: docs_network_vulnerability_contact
+  version: 1
+  topic: security
+  claim: Wispr asks that vulnerabilities be reported to security@wispr.ai.
+  source_id: docs_network
+  source_quote: Report vulnerabilities to security@wispr.ai
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: model_improvement_default_on
+  version: 1
+  topic: consent
+  claim: Model improvement is on by default for Free and Pro.
+  source_id: docs_security_faq
+  source_quote: is on by default for Free and Pro, with the choice shown during onboarding
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - free
+  - pro
+  conflicts_with: []
+- id: model_improvement_off_enterprise
+  version: 1
+  topic: consent
+  claim: For Enterprise, model improvement is off and administrators cannot re-enable it.
+  source_id: docs_security_faq
+  source_quote: it is off for Enterprise and administrators cannot re-enable it
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: model_improvement_off_stops_training
+  version: 1
+  topic: consent
+  claim: Turning off model improvement stops your content being used to improve Wispr's models.
+  source_id: docs_security_faq
+  source_quote: Turning it off stops your content from being used to improve Wispr's models
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: dictation_cloud_storage_scope
+  version: 1
+  topic: privacy
+  claim: Dictation Cloud Storage controls whether dictation data is stored on Wispr's servers, not Notetaker or Scratchpad.
+  source_id: docs_security_faq
+  source_quote: Whether dictation data is stored on Wispr's servers; dictation only, not Notetaker or Scratchpad
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: delete_data_permanent
+  version: 1
+  topic: privacy
+  claim: Delete your data permanently deletes content and keeps the account.
+  source_id: docs_security_faq
+  source_quote: Permanently deletes your content, keeping your account
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: org_meetings_not_deletable
+  version: 1
+  topic: privacy
+  claim: Where an organization keeps meetings, meeting content cannot be deleted through the Delete your data control.
+  source_id: docs_security_faq
+  source_quote: If your organization keeps meetings, meeting content cannot be deleted this way
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: export_excludes_unretained_history
+  version: 1
+  topic: privacy
+  claim: A data export cannot include dictation history that Wispr did not retain on its servers.
+  source_id: docs_security_faq
+  source_quote: cannot include dictation history that was never retained on Wispr's servers
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: meeting_audio_kept_7_days
+  version: 1
+  topic: privacy
+  claim: Meeting audio uploaded to Wispr is kept for 7 days from upload.
+  source_id: docs_security_faq
+  source_quote: Meeting audio uploaded to Wispr is kept for 7 days from upload
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: meeting_transcripts_remain_after_audio
+  version: 1
+  topic: privacy
+  claim: Meeting transcripts and summaries remain after the audio is deleted.
+  source_id: docs_security_faq
+  source_quote: transcripts and summaries remain
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: not_end_to_end_encrypted
+  version: 1
+  topic: security
+  claim: Service data is not end-to-end encrypted in the strict sense.
+  source_id: docs_security_faq
+  source_quote: It is not end-to-end encrypted in the strict sense
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: customer_managed_keys_not_supported
+  version: 1
+  topic: security
+  claim: Wispr manages service encryption keys, and customer-managed keys are not supported.
+  source_id: docs_security_faq
+  source_quote: customer-managed keys are not supported
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: saml_sso_growth_enterprise
+  version: 1
+  topic: security
+  claim: SAML single sign-on is available to organizations on Growth and Enterprise.
+  source_id: docs_security_faq
+  source_quote: Organizations can use SAML single sign-on on Growth and Enterprise
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - growth
+  - enterprise
+  conflicts_with: []
+- id: enterprise_scim_audit_logs
+  version: 1
+  topic: security
+  claim: Enterprise adds controls such as SCIM user management, audit logs, and managed deployment.
+  source_id: docs_security_faq
+  source_quote: Enterprise adds controls such as SCIM user management, audit logs, and managed deployment
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: soc2_type_ii_report
+  version: 1
+  topic: compliance
+  claim: Wispr's Trust Center provides a SOC 2 Type II report.
+  source_id: docs_security_faq
+  source_quote: The Trust Center provides Wispr's SOC 2 Type II report
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: iso_27001_certificate
+  version: 1
+  topic: compliance
+  claim: Wispr's Trust Center provides an ISO/IEC 27001:2022 certificate.
+  source_id: docs_security_faq
+  source_quote: The Trust Center provides Wispr's SOC 2 Type II report, the ISO/IEC 27001:2022 certificate
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: notetaker_not_in_audits
+  version: 1
+  topic: compliance
+  claim: Meeting Notetaker was not assessed in the SOC 2 Type I, SOC 2 Type II, or ISO 27001 certification audits.
+  source_id: docs_security_faq
+  source_quote: Meeting Notetaker launched after those audit periods and was not assessed
+  checked: '2026-11-05'
+  status: conflicting
+  plan_scope:
+  - unknown
+  conflicts_with:
+  - security_soc2_iso_certified
+- id: hipaa_requires_baa
+  version: 1
+  topic: compliance
+  claim: HIPAA-ready dictation requires a signed Business Associate Agreement (BAA).
+  source_id: docs_security_faq
+  source_quote: HIPAA-ready dictation requires a signed
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: baa_ai_providers_covered
+  version: 1
+  topic: compliance
+  claim: Under a BAA, text from covered accounts is only sent to AI providers covered by the agreement.
+  source_id: docs_security_faq
+  source_quote: text from covered accounts is only sent to AI providers covered by the agreement
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: us_data_location
+  version: 1
+  topic: privacy
+  claim: Wispr Flow processes and stores customer data in the United States.
+  source_id: docs_security_faq
+  source_quote: processes and stores customer data in the United States
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: member_cannot_relax_admin_setting
+  version: 1
+  topic: governance
+  claim: A member cannot relax a setting that an admin manages.
+  source_id: docs_security_faq
+  source_quote: a member cannot relax an admin-managed setting
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: snippet_policy_default_unrestricted
+  version: 1
+  topic: governance
+  claim: The snippet sharing policy defaults to Unrestricted, which lets any member share org-wide.
+  source_id: docs_snippet_policy
+  source_quote: (the default) lets any member share org-wide.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - business-tier
+  - growth
+  - enterprise
+  conflicts_with: []
+- id: settings_change_admin_roles_only
+  version: 1
+  topic: governance
+  claim: Only admins, superadmins and IT admins can change the snippet sharing policy and connector settings.
+  source_id: docs_snippet_policy
+  source_quote: Only admins, superadmins, and IT admins can change these settings.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: connector_available_unless_admin_disables
+  version: 1
+  topic: governance
+  claim: Connectors are available to members unless an admin turns them off in Connector access.
+  source_id: docs_snippet_policy
+  source_quote: Connectors are available unless an admin turns them off,
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: connector_member_must_authorize
+  version: 1
+  topic: security
+  claim: Nothing connects automatically; each member must click Connect and complete authorization.
+  source_id: docs_snippet_policy
+  source_quote: each member must click Connect and complete authorization.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: connector_disable_keeps_member_access
+  version: 1
+  topic: security
+  claim: Disabling a connector does not revoke access that members already granted.
+  source_id: docs_snippet_policy
+  source_quote: Disabling a connector does not revoke access members already granted.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: connector_github_linear_cannot_disable
+  version: 1
+  topic: security
+  claim: Admins cannot disable the GitHub and Linear connectors.
+  source_id: docs_snippet_policy
+  source_quote: Cannot be disabled by admins.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: connector_gmail_disconnect_deletes_briefs
+  version: 1
+  topic: privacy
+  claim: Disconnecting Gmail (Google Automations) permanently deletes all of the member's briefs, and this cannot be undone.
+  source_id: docs_snippet_policy
+  source_quote: Disconnecting will permanently delete all of your briefs. This can't be undone.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: enterprise_only_completed_assessments
+  version: 1
+  topic: compliance
+  claim: Completed vendor security assessments and security review calls are reserved for Enterprise customers and prospects.
+  source_id: docs_vendor_assessments
+  source_quote: reserved for Enterprise customers and prospects
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: assessment_requires_signed_nda
+  version: 1
+  topic: legal
+  claim: Completed vendor security assessments require a signed NDA.
+  source_id: docs_vendor_assessments
+  source_quote: and require a signed NDA
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: assessments_not_offered_lower_plans
+  version: 1
+  topic: compliance
+  claim: Wispr does not complete assessments or arrange security calls on Free, Pro, Student, or Growth plans.
+  source_id: docs_vendor_assessments
+  source_quote: Wispr does not complete assessments or arrange security calls on these plans.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - free
+  - pro
+  - student
+  - growth
+  conflicts_with: []
+- id: trust_center_access_work_email
+  version: 1
+  topic: compliance
+  claim: Anyone with a work email can request Trust Center access.
+  source_id: docs_vendor_assessments
+  source_quote: Anyone with a work email can request access
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: soc2_type2_report_trust_criteria
+  version: 1
+  topic: compliance
+  claim: Wispr has a SOC 2 Type II report by A-LIGN covering Security, Availability, and Confidentiality.
+  source_id: docs_vendor_assessments
+  source_quote: covering the Security, Availability, and Confidentiality Trust Services Criteria together
+  checked: '2026-11-05'
+  status: retired
+  plan_scope:
+  - unknown
+  conflicts_with:
+  - iso27001_certificate_held
+  - soc2_type2_report_pending
+  - iso_27001_pending
+  - iso_27001_certification_in_progress
+  retired_on: '2026-11-07'
+- id: soc2_type2_hipaa_hitech_requirements
+  version: 1
+  topic: compliance
+  claim: The SOC 2 Type II report also covers HIPAA and HITECH requirements.
+  source_id: docs_vendor_assessments
+  source_quote: together with HIPAA and HITECH requirements
+  checked: '2026-11-05'
+  status: retired
+  plan_scope:
+  - unknown
+  conflicts_with: []
+  retired_on: '2026-11-07'
+- id: soc2_type2_unqualified_opinion
+  version: 1
+  topic: compliance
+  claim: The SOC 2 Type II report has an unqualified opinion with no exceptions noted in tests of controls.
+  source_id: docs_vendor_assessments
+  source_quote: with an unqualified opinion and no exceptions noted in the tests of controls
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: soc2_in_scope_system_dictation
+  version: 1
+  topic: compliance
+  claim: Wispr Flow dictation is the in-scope system for the SOC 2 examinations.
+  source_id: docs_vendor_assessments
+  source_quote: Wispr Flow dictation is the in-scope system for the SOC 2 examinations
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: meeting_notetaker_not_assessed
+  version: 1
+  topic: compliance
+  claim: Meeting Notetaker was not assessed in the SOC 2 or ISO 27001 audits.
+  source_id: docs_vendor_assessments
+  source_quote: Meeting Notetaker launched after those audit periods and was not assessed
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: iso27001_certificate_held
+  version: 1
+  topic: compliance
+  claim: Wispr holds an ISO/IEC 27001:2022 certificate.
+  source_id: docs_vendor_assessments
+  source_quote: ISO/IEC 27001:2022 certificate
+  checked: '2026-11-05'
+  status: conflicting
+  plan_scope:
+  - unknown
+  conflicts_with:
+  - soc2_type2_report_trust_criteria
+  - soc2_type2_report_pending
+  - iso_27001_pending
+  - iso_27001_certification_in_progress
+- id: iso27001_statement_of_applicability_nda
+  version: 1
+  topic: compliance
+  claim: The ISO 27001 Statement of Applicability is available under NDA.
+  source_id: docs_vendor_assessments
+  source_quote: the Statement of Applicability is available under NDA
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: subprocessor_list_published_no_request
+  version: 1
+  topic: privacy
+  claim: The current subprocessor list is published without an access request.
+  source_id: docs_vendor_assessments
+  source_quote: the current subprocessor list, and public security disclosures are published
+  checked: '2026-11-05'
+  status: retired
+  plan_scope:
+  - unknown
+  conflicts_with: []
+  retired_on: '2026-11-07'
+- id: flow_hipaa_ready_with_baa
+  version: 1
+  topic: compliance
+  claim: Flow is HIPAA-ready for dictation with a signed BAA.
+  source_id: docs_vendor_assessments
+  source_quote: Flow is HIPAA-ready for dictation with a signed BAA
+  checked: '2026-11-05'
+  status: retired
+  plan_scope:
+  - unknown
+  conflicts_with: []
+  retired_on: '2026-11-07'
+- id: baa_inproduct_signing_enterprise_admin
+  version: 1
+  topic: legal
+  claim: In-product BAA signing requires an Enterprise plan and an organization admin.
+  source_id: docs_vendor_assessments
+  source_quote: In-product signing requires an Enterprise plan and an organization admin
+  checked: '2026-11-05'
+  status: retired
+  plan_scope:
+  - enterprise
+  conflicts_with:
+  - baa_org_signing_requires_enterprise
+  - growth_enterprise_include_baa
+  - growth_org_wide_hipaa_enforcement
+  retired_on: '2026-11-07'
+- id: vulnerability_reports_not_by_email
+  version: 1
+  topic: security
+  claim: The Vulnerability Disclosure and Bug Bounty Program does not accept reports by direct email to a security@ inbox.
+  source_id: docs_vendor_assessments
+  source_quote: does not accept submissions by direct email to a security@ inbox
+  checked: '2026-11-05'
+  status: retired
+  plan_scope:
+  - unknown
+  conflicts_with: []
+  retired_on: '2026-11-07'
+- id: trust_center_issues_to_security_email
+  version: 1
+  topic: compliance
+  claim: Wispr directs Trust Center sign-in errors and unaddressed assessment items to security@wispr.ai.
+  source_id: docs_vendor_assessments
+  source_quote: Email security@wispr.ai with your organization name and the assessment you are working through
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: granola_case_filed_ndca
+  version: 1
+  topic: legal
+  claim: The Chamberlain v. Granola, Inc. case was filed in the U.S. District Court for the Northern District of California.
+  source_id: legal_granola_btlaw
+  source_quote: filed in the U.S. District Court for the Northern District of California
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: granola_complaint_alleges_training_default
+  version: 1
+  topic: legal
+  claim: The Chamberlain complaint alleges that Granola uses captured communications for AI model training by default.
+  source_id: legal_granola_btlaw
+  source_quote: The complaint alleges that Granola uses captured communications for AI model training by default
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: granola_policy_training_data_not_extractable
+  version: 1
+  topic: privacy
+  claim: The page says Granola's privacy policy acknowledges that data incorporated into models cannot be extracted once training is complete.
+  source_id: legal_granola_btlaw
+  source_quote: data incorporated into models cannot be extracted once training is complete
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: granola_training_default_free_business
+  version: 1
+  topic: privacy
+  claim: The page says anonymized data is used for model improvements on free and business plans unless each user disables the feature.
+  source_id: legal_granola_btlaw
+  source_quote: On free and business plans, anonymized data is used for model improvements
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - free
+  - business
+  conflicts_with: []
+- id: granola_optout_no_guarantee_prior_use
+  version: 1
+  topic: privacy
+  claim: The page says Granola states it cannot guarantee that anonymized data was not used before a user changed the setting.
+  source_id: legal_granola_btlaw
+  source_quote: cannot guarantee that anonymized data wasn’t used before you changed the setting
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: granola_chat_watermark_off_by_default
+  version: 1
+  topic: consent
+  claim: The complaint says Granola's chat-message notification and video watermark are not enabled by default.
+  source_id: legal_granola_btlaw
+  source_quote: neither is enabled by default
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: granola_does_not_configure_customer_settings
+  version: 1
+  topic: consent
+  claim: The page says Granola states it does not configure these transparency settings on behalf of customers.
+  source_id: legal_granola_btlaw
+  source_quote: does not configure these settings on behalf of customers
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: granola_states_no_audio_recording
+  version: 1
+  topic: privacy
+  claim: The page says Granola states that it does not record or save audio.
+  source_id: legal_granola_btlaw
+  source_quote: does not record or save audio
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: granola_no_bot_no_participant_notice
+  version: 1
+  topic: consent
+  claim: The page says Granola's tool joins no bot and shows no notification to meeting participants.
+  source_id: legal_granola_btlaw
+  source_quote: no bot joins the meeting and no notification appears for meeting participants
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: granola_capture_meeting_platforms
+  version: 1
+  topic: product
+  claim: The page says Granola captures and transcribes meeting audio on Google Meet, Zoom, Microsoft Teams and other virtual meeting platforms.
+  source_id: legal_granola_btlaw
+  source_quote: on Google Meet, Zoom, Microsoft Teams, and other virtual meeting platforms
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: granola_complaint_ecpa_claim
+  version: 1
+  topic: legal
+  claim: The Chamberlain complaint alleges a claim under the federal Electronic Communications Privacy Act (ECPA).
+  source_id: legal_granola_btlaw
+  source_quote: Violation of the ECPA, 18 U.S.C. §§ 2510 et seq.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: granola_complaint_cipa_claim
+  version: 1
+  topic: legal
+  claim: The Chamberlain complaint alleges wiretapping under the California Invasion of Privacy Act (CIPA).
+  source_id: legal_granola_btlaw
+  source_quote: Wiretapping under the California Invasion of Privacy Act (CIPA)
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: granola_customers_responsible_for_notice
+  version: 1
+  topic: compliance
+  claim: The page says Granola states that customers remain responsible for determining what notice or consent is required.
+  source_id: legal_granola_btlaw
+  source_quote: remain responsible for determining what notice or consent is required
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: granola_no_merits_response_yet
+  version: 1
+  topic: legal
+  claim: The page says Granola has not yet responded on the merits of the Chamberlain lawsuit.
+  source_id: legal_granola_btlaw
+  source_quote: Granola has not yet responded on the merits
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: otter_privacy_litigation_consolidated
+  version: 1
+  topic: competitor
+  claim: The In re Otter.AI Privacy Litigation consolidates four suits filed between August and September 2025.
+  source_id: legal_granola_btlaw
+  source_quote: consolidates four suits filed between August and September 2025
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: otter_motion_to_dismiss_pending
+  version: 1
+  topic: competitor
+  claim: The page says the Otter.ai motion to dismiss has been argued and remains pending.
+  source_id: legal_granola_btlaw
+  source_quote: motion to dismiss has been argued and remains pending
+  checked: '2026-11-05'
+  status: conflicting
+  plan_scope:
+  - unknown
+  conflicts_with:
+  - otter_wiretap_ca_claims_proceed
+- id: privacy_ai_notetaker_no_merits_ruling
+  version: 1
+  topic: legal
+  claim: The page says no court has ruled on the merits in the Granola, Otter.ai or Fireflies.ai cases.
+  source_id: legal_granola_btlaw
+  source_quote: No court has ruled on the merits in any of them
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: fireflies_illinois_bipa_suits
+  version: 1
+  topic: competitor
+  claim: The Fireflies.ai Illinois suits proceed under the Illinois Biometric Information Privacy Act (BIPA).
+  source_id: legal_granola_btlaw
+  source_quote: proceed on a different theory, under the Illinois Biometric Information Privacy Act (BIPA)
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: fireflies_voiceprint_allegation
+  version: 1
+  topic: competitor
+  claim: The Illinois complaints allege that Fireflies.ai's speaker-recognition feature generates voiceprints of participants.
+  source_id: legal_granola_btlaw
+  source_quote: the Illinois complaints allege that its speaker-recognition feature generates voiceprints
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: otter_wiretap_ca_claims_proceed
+  version: 1
+  topic: legal
+  claim: The court allowed the central federal wiretap and California privacy claims against Otter to proceed.
+  source_id: legal_otter_uctoday
+  source_quote: allowed the central claims under federal wiretap, California privacy
+  checked: '2026-11-05'
+  status: conflicting
+  plan_scope:
+  - unknown
+  conflicts_with:
+  - otter_motion_to_dismiss_pending
+- id: otter_bipa_claims_proceed
+  version: 1
+  topic: legal
+  claim: The court allowed Illinois BIPA biometric privacy claims against Otter to proceed.
+  source_id: legal_otter_uctoday
+  source_quote: Judge Lee allowed claims under Illinois’ Biometric Information Privacy Act (BIPA) to proceed.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: otter_ruling_not_violation_finding
+  version: 1
+  topic: legal
+  claim: The ruling does not determine whether Otter broke the law.
+  source_id: legal_otter_uctoday
+  source_quote: The ruling does not determine whether Otter broke the law
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: otter_litigation_ongoing
+  version: 1
+  topic: legal
+  claim: The Otter.AI privacy litigation is still ongoing.
+  source_id: legal_otter_uctoday
+  source_quote: While still ongoing, the outcome of the case
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: otter_allegation_meeting_join
+  version: 1
+  topic: legal
+  claim: Plaintiffs allege Otter’s meeting assistant joined Zoom, Microsoft Teams and Google Meet calls.
+  source_id: legal_otter_uctoday
+  source_quote: Otter’s meeting assistant joined Zoom, Microsoft Teams and Google Meet calls
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: otter_allegation_recording_retention
+  version: 1
+  topic: legal
+  claim: Plaintiffs allege Otter recorded, transcribed and retained communications without consent required by applicable laws.
+  source_id: legal_otter_uctoday
+  source_quote: then recorded, transcribed and retained communications without the consent required by applicable laws
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: otter_allegation_voiceprints
+  version: 1
+  topic: legal
+  claim: Plaintiffs allege Otter captured voiceprints through speaker-identification capabilities.
+  source_id: legal_otter_uctoday
+  source_quote: They further allege the company captured voiceprints through speaker-identification capabilities
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: otter_allegation_model_training_use
+  version: 1
+  topic: legal
+  claim: Plaintiffs allege Otter used meeting information to improve its products and machine-learning models.
+  source_id: legal_otter_uctoday
+  source_quote: used meeting information to improve its products and machine-learning models
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: otter_court_plausibility_finding
+  version: 1
+  topic: legal
+  claim: The court found the complaint plausibly alleges Otter retained and used conversational data for its own commercial purposes.
+  source_id: legal_otter_uctoday
+  source_quote: plausibly alleges Otter retained and used conversational data for its own commercial purposes
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: otter_arguments_rejected_at_this_stage
+  version: 1
+  topic: legal
+  claim: The court rejected Otter’s arguments, including that it was not a third-party interceptor, at this stage.
+  source_id: legal_otter_uctoday
+  source_quote: Judge Lee rejected those arguments at this stage
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: otter_bipa_negligent_damages
+  version: 1
+  topic: legal
+  claim: UC Today reports BIPA permits statutory damages of $1,000 per negligent violation. Check with counsel.
+  source_id: legal_otter_uctoday
+  source_quote: It permits statutory damages of $1,000 per negligent violation
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: otter_bipa_intentional_damages
+  version: 1
+  topic: legal
+  claim: UC Today reports BIPA permits statutory damages of up to $5,000 per intentional or reckless violation. Check with counsel.
+  source_id: legal_otter_uctoday
+  source_quote: up to $5,000 per intentional or reckless violation
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: teams_flags_external_meeting_bots
+  version: 1
+  topic: product
+  claim: UC Today reports Microsoft Teams flags some external meeting bots as Unverified.
+  source_id: legal_otter_uctoday
+  source_quote: Microsoft Teams has moved to flag some external meeting bots as “Unverified”
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: teams_external_bot_organiser_approval
+  version: 1
+  topic: product
+  claim: UC Today reports Microsoft Teams requires organiser approval for some external meeting bots.
+  source_id: legal_otter_uctoday
+  source_quote: require organiser approval
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: zoom_meet_ai_notetaker_host_controls
+  version: 1
+  topic: product
+  claim: UC Today reports Zoom and Google Meet link native AI note-taking more closely to host controls.
+  source_id: legal_otter_uctoday
+  source_quote: Zoom and Google Meet have linked native AI note-taking more closely to host controls
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: fluid_dictation_copilot_plus_pc
+  version: 1
+  topic: product
+  claim: Fluid dictation is a voice access feature on Copilot+ PCs.
+  source_id: ms_fluid_dictation
+  source_quote: Fluid dictation is a new feature in voice access on Copilot+ PCs
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: fluid_dictation_english_locales
+  version: 1
+  topic: product
+  claim: Fluid dictation is available in all English locales.
+  source_id: ms_fluid_dictation
+  source_quote: is available in all English locales
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: fluid_dictation_on_device_slm
+  version: 1
+  topic: privacy
+  claim: Fluid dictation is powered by on-device small language models (SLMs).
+  source_id: ms_fluid_dictation
+  source_quote: This experience is powered by on-device small language models (SLMs)
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: fluid_dictation_auto_corrects_text
+  version: 1
+  topic: product
+  claim: Fluid dictation automatically corrects grammar, punctuation and filler words as the user speaks.
+  source_id: ms_fluid_dictation
+  source_quote: It automatically corrects grammar, punctuation, and filler words as you speak
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: hipaa_baa_any_plan
+  version: 1
+  topic: compliance
+  claim: HIPAA compliance is available on any plan with a signed Business Associate Agreement.
+  source_id: wf_business
+  source_quote: Available on any plan with a signed Business Associate Agreement.
+  checked: '2026-11-05'
+  status: retired
+  plan_scope:
+  - all
+  conflicts_with: []
+  retired_on: '2026-11-06'
+- id: hipaa_baa_dictation_only
+  version: 1
+  topic: compliance
+  claim: The HIPAA Business Associate Agreement covers dictation only.
+  source_id: wf_business
+  source_quote: Covers dictation only.
+  checked: '2026-11-05'
+  status: retired
+  plan_scope:
+  - all
+  conflicts_with: []
+  retired_on: '2026-11-06'
+- id: soc2_type_ii_audited
+  version: 1
+  topic: compliance
+  claim: Wispr states it is independently audited for SOC 2 Type II.
+  source_id: wf_business
+  source_quote: Independently audited to verify we safeguard your data across key trust principles.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: iso_27001_audited
+  version: 1
+  topic: compliance
+  claim: Wispr states it is audited against the ISO 27001 information security standard.
+  source_id: wf_business
+  source_quote: Audited by the international standard for information security management systems.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: admin_sets_data_policy_portal
+  version: 1
+  topic: governance
+  claim: Admins set data policy once in the admin portal.
+  source_id: wf_business
+  source_quote: 'Admins set data policy once in the admin portal:'
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: admin_cloud_storage_dictation
+  version: 1
+  topic: privacy
+  claim: Admins control whether dictation is stored in the cloud.
+  source_id: wf_business
+  source_quote: whether dictation is stored in the cloud
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: admin_device_retention_period
+  version: 1
+  topic: privacy
+  claim: Admins control how long dictation is kept on devices.
+  source_id: wf_business
+  source_quote: how long it's kept on devices
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: admin_context_awareness_toggle
+  version: 1
+  topic: privacy
+  claim: Admins control whether context awareness is available.
+  source_id: wf_business
+  source_quote: whether context awareness is available
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: admin_notetaker_disable_toggle
+  version: 1
+  topic: governance
+  claim: Admins control whether Notetaker can be used at all.
+  source_id: wf_business
+  source_quote: whether Notetaker can be used at all
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: notetaker_recordings_private
+  version: 1
+  topic: privacy
+  claim: Individual Notetaker recordings and transcripts are kept private.
+  source_id: wf_business
+  source_quote: Individual recordings and transcripts stay private. Always.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: notetaker_searches_meetings_slack_email
+  version: 1
+  topic: privacy
+  claim: Notetaker searches across team meetings, Slack channels, and inboxes.
+  source_id: wf_business
+  source_quote: Notetaker searches across your team's meetings, Slack channels, and inboxes
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: notetaker_feeds_ai_tools
+  version: 1
+  topic: privacy
+  claim: Notetaker feeds meeting content into the AI tools a team already uses.
+  source_id: wf_business
+  source_quote: feeds it all straight into the AI tools your team already uses
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: free_plan_platform_support
+  version: 1
+  topic: product
+  claim: The free plan supports dictation on Mac, Windows, iOS, and Android.
+  source_id: wf_business
+  source_quote: Dictation on Mac, Windows, iOS, and Android
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - free
+  conflicts_with: []
+- id: growth_sso_saml
+  version: 1
+  topic: security
+  claim: The growth plan includes single sign-on with SAML.
+  source_id: wf_business
+  source_quote: Single sign-on (SSO) with SAML
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - growth
+  conflicts_with: []
+- id: growth_org_wide_hipaa_enforcement
+  version: 1
+  topic: compliance
+  claim: The growth plan includes org-wide HIPAA enforcement with a signed BAA.
+  source_id: wf_business
+  source_quote: Org-wide HIPAA enforcement with a signed BAA
+  checked: '2026-11-05'
+  status: conflicting
+  plan_scope:
+  - growth
+  conflicts_with:
+  - baa_org_signing_requires_enterprise
+  - growth_enterprise_include_baa
+  - baa_inproduct_signing_enterprise_admin
+- id: growth_admin_model_training_control
+  version: 1
+  topic: privacy
+  claim: The growth plan lets admins control model training for the whole team.
+  source_id: wf_business
+  source_quote: Admin control over model training for your whole team
+  checked: '2026-11-05'
+  status: conflicting
+  plan_scope:
+  - growth
+  conflicts_with:
+  - growth_enterprise_model_improvement_locked
+- id: enterprise_model_training_locked
+  version: 1
+  topic: privacy
+  claim: The enterprise plan has model training locked off.
+  source_id: wf_business
+  source_quote: Model training locked off
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: enterprise_scim_provisioning
+  version: 1
+  topic: security
+  claim: The enterprise plan includes user provisioning through SCIM.
+  source_id: wf_business
+  source_quote: User provisioning (SCIM)
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: enterprise_audit_logs_mdm
+  version: 1
+  topic: security
+  claim: The enterprise plan includes audit logs and managed deployment through MDM.
+  source_id: wf_business
+  source_quote: Audit logs and managed deployment (MDM)
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: enterprise_invoicing_po_billing
+  version: 1
+  topic: pricing
+  claim: The enterprise plan offers invoicing and PO billing.
+  source_id: wf_business
+  source_quote: Invoicing and PO billing
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: enterprise_sla_support
+  version: 1
+  topic: pricing
+  claim: The enterprise plan includes dedicated support with SLAs.
+  source_id: wf_business
+  source_quote: Dedicated support with SLAs
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: enterprise_model_training_enforced
+  version: 1
+  topic: privacy
+  claim: On Enterprise, model training is off across the organization and enforced in the MSA and DPA.
+  source_id: wf_compliance_note
+  source_quote: model training is off across the organization and enforced in your MSA and DPA
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: training_setting_covers_all_data
+  version: 1
+  topic: privacy
+  claim: The 'Improve the model for everyone' setting covers all Wispr Flow data across Dictation and Notetaker.
+  source_id: wf_compliance_note
+  source_quote: covers all of your Wispr Flow data, across Dictation and Notetaker
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: third_party_ai_processing
+  version: 1
+  topic: privacy
+  claim: Customer content is processed by third-party AI and language model providers to deliver the service.
+  source_id: wf_compliance_note
+  source_quote: Customer content is processed by third-party AI and language model providers
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: third_party_no_training
+  version: 1
+  topic: privacy
+  claim: Third-party AI and language model providers do not train their models on customer data.
+  source_id: wf_compliance_note
+  source_quote: don't train their models on it
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: third_party_data_deleted_30_days
+  version: 1
+  topic: privacy
+  claim: Customer content processed by third-party providers is generally deleted within 30 days.
+  source_id: wf_compliance_note
+  source_quote: it's generally deleted within 30 days
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: subprocessor_list_published
+  version: 1
+  topic: compliance
+  claim: Wispr publishes its current subprocessor list in the Trust Center.
+  source_id: wf_compliance_note
+  source_quote: Our current subprocessor list is published in the Trust Center
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: dictation_storage_only_if_cloud_on
+  version: 1
+  topic: privacy
+  claim: Dictation transcripts and audio are stored on Wispr servers only if dictation cloud storage is on.
+  source_id: wf_compliance_note
+  source_quote: stored on Wispr servers only if Dictation cloud storage is on
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: admin_cloud_storage_off_everyone
+  version: 1
+  topic: governance
+  claim: Admins can turn off dictation cloud storage for everyone.
+  source_id: wf_compliance_note
+  source_quote: Dictation cloud storage can be turned off for everyone
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: local_history_desktop_options
+  version: 1
+  topic: privacy
+  claim: On desktop, dictation history can be kept, auto-deleted every 24 hours, or never stored locally.
+  source_id: wf_compliance_note
+  source_quote: store it, auto-delete every 24 hours, or never store it
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: notetaker_audio_retained_encrypted
+  version: 1
+  topic: privacy
+  claim: Notetaker meeting audio is retained encrypted for a short period.
+  source_id: wf_compliance_note
+  source_quote: meeting audio is retained encrypted for a short period
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: context_awareness_enterprise_disable
+  version: 1
+  topic: privacy
+  claim: Admins can disable context awareness org-wide on Enterprise.
+  source_id: wf_compliance_note
+  source_quote: Admins can disable it org-wide on Enterprise
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: notetaker_consent_confirmation
+  version: 1
+  topic: consent
+  claim: Admins can require a consent confirmation before every Notetaker meeting.
+  source_id: wf_compliance_note
+  source_quote: require a consent confirmation before every meeting
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: sso_saml_enforcement
+  version: 1
+  topic: security
+  claim: Wispr Flow supports SSO with SAML, with enforcement.
+  source_id: wf_compliance_note
+  source_quote: SSO/SAML with enforcement
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: scim_provisioning_supported
+  version: 1
+  topic: security
+  claim: Wispr Flow supports SCIM provisioning.
+  source_id: wf_compliance_note
+  source_quote: Single sign-on with SAML, SCIM provisioning, and MDM deployment
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: rbac_roles
+  version: 1
+  topic: security
+  claim: Admins can assign roles with different levels of access to org settings, user management, and data controls.
+  source_id: wf_compliance_note
+  source_quote: Admins can assign roles with different levels of access
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: audit_logs_export
+  version: 1
+  topic: security
+  claim: Audit logs can be exported from the admin portal today.
+  source_id: wf_compliance_note
+  source_quote: Audit logs are available for export from the admin portal today
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: encryption_tls_aes256
+  version: 1
+  topic: security
+  claim: Data is encrypted in transit with TLS 1.2+ and at rest with AES-256.
+  source_id: wf_compliance_note
+  source_quote: encrypted in transit with TLS 1.2+ and at rest with AES-256
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: data_stored_us_aws
+  version: 1
+  topic: privacy
+  claim: Data is stored in the United States on AWS.
+  source_id: wf_compliance_note
+  source_quote: In the United States, on AWS
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: no_data_residency_outside_us
+  version: 1
+  topic: privacy
+  claim: Wispr does not currently offer data residency outside the US.
+  source_id: wf_compliance_note
+  source_quote: we don't currently offer data residency outside the US
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: eu_uk_customers_dpa_scc
+  version: 1
+  topic: legal
+  claim: EU and UK customers are served under a Data Processing Agreement with Standard Contractual Clauses.
+  source_id: wf_compliance_note
+  source_quote: under a Data Processing Agreement with Standard Contractual Clauses
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: soc2_type1_complete
+  version: 1
+  topic: compliance
+  claim: The SOC 2 Type I audit is complete and was performed by A-LIGN in April 2026.
+  source_id: wf_compliance_note
+  source_quote: SOC 2 Type I is complete, audited by A-LIGN in April 2026
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: soc2_type2_report_pending
+  version: 1
+  topic: compliance
+  claim: The SOC 2 Type II report is expected in September.
+  source_id: wf_compliance_note
+  source_quote: the report is expected in September
+  checked: '2026-11-05'
+  status: retired
+  plan_scope:
+  - unknown
+  conflicts_with:
+  - soc2_type2_report_trust_criteria
+  - iso27001_certificate_held
+  - iso_27001_pending
+  - iso_27001_certification_in_progress
+  retired_on: '2026-11-06'
+- id: iso_27001_pending
+  version: 1
+  topic: compliance
+  claim: The ISO 27001 certificate is pending issue.
+  source_id: wf_compliance_note
+  source_quote: the certificate is pending issue
+  checked: '2026-11-05'
+  status: conflicting
+  plan_scope:
+  - unknown
+  conflicts_with:
+  - soc2_type2_report_trust_criteria
+  - iso27001_certificate_held
+  - soc2_type2_report_pending
+  - iso_27001_certification_in_progress
+- id: ios_background_flow_records_mic
+  version: 1
+  topic: privacy
+  claim: On iOS, background Flow keeps recording from the microphone to avoid app switching.
+  source_id: wf_compliance_note
+  source_quote: persists recording from the mic to avoid app switching
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: dictation_cloud_off_discard
+  version: 1
+  topic: privacy
+  claim: With Dictation cloud storage off, audio is discarded once it is transcribed.
+  source_id: wf_enterprise_privacy_post
+  source_quote: Turn it off and audio is discarded once it's transcribed.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: admin_cloud_storage_org_wide
+  version: 1
+  topic: governance
+  claim: Admins can set dictation cloud storage for the whole organization, or leave it to individual users.
+  source_id: wf_enterprise_privacy_post
+  source_quote: Set dictation cloud storage for the whole organization, or leave it to individual users.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: internal_access_logged
+  version: 1
+  topic: security
+  claim: Internal access to data is limited to authorized personnel, and every access is logged.
+  source_id: wf_enterprise_privacy_post
+  source_quote: Internal access is limited to authorized personnel and every access is logged.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: soc2_type2_audit_complete
+  version: 1
+  topic: compliance
+  claim: The SOC 2 Type II audit is complete.
+  source_id: wf_enterprise_privacy_post
+  source_quote: Our SOC 2 Type II audit is complete
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: pen_test_annual
+  version: 1
+  topic: security
+  claim: Wispr conducts an annual third-party penetration test.
+  source_id: wf_enterprise_privacy_post
+  source_quote: Wispr conducts an annual third-party penetration test
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: drata_compliance_platform_engaged
+  version: 1
+  topic: compliance
+  claim: Wispr has formally engaged Drata as its compliance automation platform, replacing Delve.
+  source_id: wf_new_audit
+  source_quote: as our new compliance automation platform, replacing Delve
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: a_lign_audit_engagement_signed
+  version: 1
+  topic: compliance
+  claim: Wispr has signed an engagement letter with A-LIGN for its audit, per the post dated Mar 27, 2026.
+  source_id: wf_new_audit
+  source_quote: we've signed an engagement letter with A-LIGN
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: soc2_reverification_planned
+  version: 1
+  topic: compliance
+  claim: A-LIGN will re-verify Wispr's SOC 2 compliance; the post describes this as future work.
+  source_id: wf_new_audit
+  source_quote: A-LIGN will be reverifying our SOC 2 compliance
+  checked: '2026-11-05'
+  status: in-progress
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: hipaa_status_verification_planned
+  version: 1
+  topic: compliance
+  claim: A-LIGN will verify Wispr's HIPAA status; the post describes this as future work.
+  source_id: wf_new_audit
+  source_quote: verifying our HIPAA status
+  checked: '2026-11-05'
+  status: in-progress
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: iso_27001_certification_in_progress
+  version: 1
+  topic: compliance
+  claim: ISO 27001 certification is in progress with A-LIGN. It is not yet certified.
+  source_id: wf_new_audit
+  source_quote: ISO 27001 certification is in progress with A-LIGN
+  checked: '2026-11-05'
+  status: conflicting
+  plan_scope:
+  - unknown
+  conflicts_with:
+  - soc2_type2_report_trust_criteria
+  - iso27001_certificate_held
+  - soc2_type2_report_pending
+  - iso_27001_pending
+- id: soc2_audit_expected_eight_weeks
+  version: 1
+  topic: compliance
+  claim: As of the post dated Mar 27, 2026, Wispr expected the SOC 2 audit to finish in roughly eight weeks.
+  source_id: wf_new_audit
+  source_quote: We expect to have the SOC 2 audit completed in roughly eight weeks
+  checked: '2026-11-05'
+  status: in-progress
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: security_controls_self_reported_reverified
+  version: 1
+  topic: security
+  claim: Wispr states its security controls have been independently reverified and remain fully operational.
+  source_id: wf_new_audit
+  source_quote: have been independently reverified and remain fully operational
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: security_controls_list_stated
+  version: 1
+  topic: security
+  claim: Wispr states its security controls include MFA, SSO, MDM, endpoint detection, encryption, role-based access and audit logging.
+  source_id: wf_new_audit
+  source_quote: MFA, SSO, MDM, endpoint detection, encryption, role-based access, audit logging, and more
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: notetaker_windows_available
+  version: 1
+  topic: product
+  claim: Wispr Flow Notetaker is now available on Windows, per an article headline dated Sep 15, 2026.
+  source_id: wf_new_audit
+  source_quote: Wispr Flow Notetaker isnow on Windows
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: free_plan_includes_notetaker
+  version: 1
+  topic: product
+  claim: The Flow free plan includes the Notetaker.
+  source_id: wf_pricing
+  source_quote: Flow free plan includes the Notetaker
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - free
+  conflicts_with: []
+- id: free_notetaker_weekly_meeting_limit
+  version: 1
+  topic: pricing
+  claim: Free accounts have a weekly meeting limit.
+  source_id: wf_pricing
+  source_quote: Free accounts have a weekly meeting limit
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - free
+  conflicts_with: []
+- id: free_mcp_ai_tools_access
+  version: 1
+  topic: privacy
+  claim: The free plan gives MCP access so meeting notes work in Claude, ChatGPT and other AI tools.
+  source_id: wf_pricing
+  source_quote: MCP access so your notes work in Claude, ChatGPT, and other AI tools
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - free
+  conflicts_with: []
+- id: pro_monthly_cost_12
+  version: 1
+  topic: pricing
+  claim: The Flow Pro monthly cost is shown as $12 in the page ROI calculator.
+  source_id: wf_pricing
+  source_quote: 'Flow Pro monthly cost:'
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - pro
+  conflicts_with: []
+- id: pro_no_commitment_cancel
+  version: 1
+  topic: pricing
+  claim: Flow Pro has no commitments and can be cancelled at any time.
+  source_id: wf_pricing
+  source_quote: There are no commitments, and you can cancel anytime.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - pro
+  conflicts_with: []
+- id: pro_notetaker_included
+  version: 1
+  topic: pricing
+  claim: The Notetaker is included in Pro at no extra cost.
+  source_id: wf_pricing
+  source_quote: The Notetaker is included in your Pro subscription at no extra cost
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - pro
+  conflicts_with: []
+- id: enterprise_pricing_custom
+  version: 1
+  topic: pricing
+  claim: Enterprise pricing is custom and the page directs buyers to talk to sales.
+  source_id: wf_pricing
+  source_quote: Talk to sales
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: notetaker_mac_windows_only
+  version: 1
+  topic: product
+  claim: The Notetaker runs on Mac and Windows.
+  source_id: wf_pricing
+  source_quote: Notetaker runs on Mac and Windows.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: notetaker_more_platforms_in_progress
+  version: 1
+  topic: product
+  claim: Notetaker support for more platforms is coming soon.
+  source_id: wf_pricing
+  source_quote: More platforms coming soon.
+  checked: '2026-11-05'
+  status: in-progress
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: notetaker_no_meeting_bot
+  version: 1
+  topic: privacy
+  claim: The Notetaker works on the device and does not use a bot to join meetings.
+  source_id: wf_pricing
+  source_quote: so there's no bot joining your calls
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: notetaker_full_access_nov30
+  version: 1
+  topic: pricing
+  claim: Full Notetaker access for the whole team is offered through November 30.
+  source_id: wf_pricing
+  source_quote: Full access through November 30
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: notetaker_limited_after_offer
+  version: 1
+  topic: pricing
+  claim: After the Notetaker offer ends, members move to a limited plan.
+  source_id: wf_pricing
+  source_quote: Members move to a limited plan afterwards
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: enterprise_org_wide_enforcement
+  version: 1
+  topic: governance
+  claim: Enterprise adds organization-wide enforcement of these policies, set once by admins.
+  source_id: wf_pricing
+  source_quote: Enterprise adds organization-wide enforcement,
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: enterprise_custom_contract_terms
+  version: 1
+  topic: legal
+  claim: The Enterprise plan offers custom contract terms.
+  source_id: wf_pricing
+  source_quote: Custom contract terms
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: security_soc2_iso_certified
+  version: 1
+  topic: compliance
+  claim: Flow is SOC 2 Type II and ISO 27001 certified.
+  source_id: wf_pricing
+  source_quote: SOC 2 Type II and ISO 27001 certified.
+  checked: '2026-11-05'
+  status: conflicting
+  plan_scope:
+  - all
+  conflicts_with:
+  - notetaker_not_in_audits
+- id: security_hipaa_baa_signed
+  version: 1
+  topic: compliance
+  claim: HIPAA-ready dictation is available with a signed BAA.
+  source_id: wf_pricing
+  source_quote: HIPAA-ready dictation with a signed BAA.
+  checked: '2026-11-05'
+  status: retired
+  plan_scope:
+  - all
+  conflicts_with: []
+  retired_on: '2026-11-06'
+- id: security_notetaker_disabled_baa
+  version: 1
+  topic: compliance
+  claim: Notetaker and Scratchpad are disabled on accounts under a BAA.
+  source_id: wf_pricing
+  source_quote: Notetaker and Scratchpad are disabled on BAA accounts.
+  checked: '2026-11-05'
+  status: retired
+  plan_scope:
+  - all
+  conflicts_with:
+  - notetaker_works_alongside_baa
+  retired_on: '2026-11-06'
+- id: security_model_training_optout
+  version: 1
+  topic: consent
+  claim: Users can opt out of model training at any time.
+  source_id: wf_pricing
+  source_quote: Opt out of model training at any time.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - all
+  conflicts_with: []
+- id: security_delete_on_device_data
+  version: 1
+  topic: privacy
+  claim: Users can delete data that stays on their device whenever they want.
+  source_id: wf_pricing
+  source_quote: delete it whenever you want.
+  checked: '2026-11-05'
+  status: confirmed
+  plan_scope:
+  - all
+  conflicts_with: []
+- id: network_outbound_domains_listed
+  version: 1
+  topic: security
+  claim: If outbound traffic is restricted, the page says to allow wisprflow.ai, admin.wisprflow.ai, dl.wisprflow.ai, dl.wisprflow.com and docs.wisprflow.ai.
+  source_id: docs_network
+  source_quote: 'If your organization restricts outbound traffic, allow these domains:'
+  checked: '2026-11-06'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: network_tls_bypass_port_443
+  version: 1
+  topic: security
+  claim: The page advises an SSL/TLS inspection bypass on outbound port 443 for the complete destination list.
+  source_id: docs_network
+  source_quote: an SSL/TLS-inspection bypass on outbound port
+  checked: '2026-11-06'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: network_bypass_blocks_decrypting_dlp
+  version: 1
+  topic: security
+  claim: DLP tools that need decrypted traffic cannot inspect the bypassed Flow destinations.
+  source_id: docs_network
+  source_quote: DLP tools that need decrypted traffic cannot inspect these destinations
+  checked: '2026-11-06'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: network_proxy_and_root_certs_respected
+  version: 1
+  topic: security
+  claim: Flow respects system proxy settings and organizational root certificates, including TLS inspection, for dictation, uploads and SSO session management.
+  source_id: docs_network
+  source_quote: Flow respects system proxy settings and organizational root certificates,
+  checked: '2026-11-06'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: network_dictation_root_cert_requirement
+  version: 1
+  topic: security
+  claim: Dictation requires valid, self-signed root certificates in macOS System Roots or the Windows root store.
+  source_id: docs_network
+  source_quote: Dictation requires valid, self-signed root certificates in macOS System Roots
+  checked: '2026-11-06'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: ip_allowlist_change_requires_enterprise_admin
+  version: 1
+  topic: security
+  claim: Changing the IP allowlist requires an active Enterprise plan and enterprise admin permissions.
+  source_id: docs_network
+  source_quote: changing it requires an active Enterprise plan and enterprise admin permissions
+  checked: '2026-11-06'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: ip_allowlist_not_enforced_android
+  version: 1
+  topic: security
+  claim: The IP allowlist is not enforced on Android.
+  source_id: docs_network
+  source_quote: It is not enforced on Android.
+  checked: '2026-11-06'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: hipaa_baa_growth_enterprise
+  version: 1
+  topic: compliance
+  claim: HIPAA compliance is available on the Growth and Enterprise plans with a signed Business Associate Agreement.
+  source_id: wf_business
+  source_quote: Available on Growth and Enterprise with a signed Business Associate Agreement.
+  checked: '2026-11-06'
+  status: confirmed
+  plan_scope:
+  - growth
+  - enterprise
+  conflicts_with: []
+- id: hipaa_covers_dictation_notetaker
+  version: 1
+  topic: compliance
+  claim: The HIPAA compliance offer covers dictation and Wispr Notetaker.
+  source_id: wf_business
+  source_quote: Covers dictation and Wispr Notetaker.
+  checked: '2026-11-06'
+  status: confirmed
+  plan_scope:
+  - growth
+  - enterprise
+  conflicts_with: []
+- id: growth_individual_usage_reporting
+  version: 1
+  topic: product
+  claim: The Growth plan includes individual usage reporting.
+  source_id: wf_business
+  source_quote: Individual usage reporting
+  checked: '2026-11-06'
+  status: confirmed
+  plan_scope:
+  - growth
+  conflicts_with: []
+- id: enterprise_free_it_admin_seats
+  version: 1
+  topic: pricing
+  claim: The Enterprise plan includes free IT admin seats.
+  source_id: wf_business
+  source_quote: Free IT admin seats
+  checked: '2026-11-06'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: mobile_dictation_history_coming_soon
+  version: 1
+  topic: product
+  claim: Local dictation history controls on mobile are coming soon, not available today.
+  source_id: wf_compliance_note
+  source_quote: Desktop today, with mobile coming soon
+  checked: '2026-11-06'
+  status: in-progress
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: admin_dictation_history_org_policy
+  version: 1
+  topic: governance
+  claim: Admins can set how dictation history is handled across the organization, including auto-delete every 24 hours.
+  source_id: wf_compliance_note
+  source_quote: Set how dictation history is handled across the org
+  checked: '2026-11-06'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: admin_accepts_baa_portal
+  version: 1
+  topic: compliance
+  claim: An admin accepts the Business Associate Agreement from the admin portal to enable HIPAA support.
+  source_id: wf_compliance_note
+  source_quote: an admin accepts the Business Associate Agreement from the admin portal
+  checked: '2026-11-06'
+  status: confirmed
+  plan_scope:
+  - growth
+  - enterprise
+  conflicts_with: []
+- id: api_siem_connectors_in_progress
+  version: 1
+  topic: product
+  claim: API and SIEM connectors for audit logs are in progress, not yet available.
+  source_id: wf_compliance_note
+  source_quote: API and SIEM connectors are in progress
+  checked: '2026-11-06'
+  status: in-progress
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: keystroke_monitoring_not_recorded
+  version: 1
+  topic: security
+  claim: Wispr Flow does not record, log, or transmit typed text outside an active dictation session.
+  source_id: wf_compliance_note
+  source_quote: doesn't record, log, or transmit anything you type outside an active dictation session
+  checked: '2026-11-06'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: free_word_limit_weekly
+  version: 1
+  topic: pricing
+  claim: The free plan dictation is limited to a set number of words per week.
+  source_id: wf_pricing
+  source_quote: Limited words per week
+  checked: '2026-11-06'
+  status: confirmed
+  plan_scope:
+  - free
+  conflicts_with: []
+- id: pro_no_minimum_seats
+  version: 1
+  topic: pricing
+  claim: A Pro team can be created with no minimum seat requirement.
+  source_id: wf_pricing
+  source_quote: Create a team with no minimum seat requirement.
+  checked: '2026-11-06'
+  status: confirmed
+  plan_scope:
+  - pro
+  conflicts_with: []
+- id: pro_basic_usage_dashboards_admin_only
+  version: 1
+  topic: governance
+  claim: Pro includes basic usage dashboards that only admins can see.
+  source_id: wf_pricing
+  source_quote: See basic usage dashboards (accessible by admin only).
+  checked: '2026-11-06'
+  status: confirmed
+  plan_scope:
+  - pro
+  conflicts_with: []
+- id: hipaa_ready_all_plans
+  version: 1
+  topic: compliance
+  claim: Dictation and Notetaker are HIPAA-ready with a signed BAA on every plan.
+  source_id: wf_pricing
+  source_quote: HIPAA-ready dictation and Notetaker with a signed BAA.
+  checked: '2026-11-06'
+  status: confirmed
+  plan_scope:
+  - all
+  conflicts_with: []
+- id: pro_price_listed_15
+  version: 1
+  topic: pricing
+  claim: The pricing page lists Pro at $15 per user per month in one view of the plan table.
+  source_id: wf_pricing
+  source_quote: Pro For individuals and teams $15 /user/mo
+  checked: '2026-11-06'
+  status: confirmed
+  plan_scope:
+  - pro
+  conflicts_with: []
+- id: pro_price_listed_12
+  version: 1
+  topic: pricing
+  claim: The pricing page also lists Pro at $12 per user per month, in the plan table and the plan summary.
+  source_id: wf_pricing
+  source_quote: Pro For individuals and teams $12 /user/mo
+  checked: '2026-11-06'
+  status: confirmed
+  plan_scope:
+  - pro
+  conflicts_with: []
+- id: growth_price_listed_23_33
+  version: 1
+  topic: pricing
+  claim: The pricing page lists Growth at $23 per user per month, with $33 per user per month shown beside Unlimited Notetaker access.
+  source_id: wf_pricing
+  source_quote: Growth Basic admin controls $23 /user/mo $33 /user/mo Unlimited Notetaker access
+  checked: '2026-11-06'
+  status: confirmed
+  plan_scope:
+  - growth
+  conflicts_with: []
+- id: growth_price_listed_18_26
+  version: 1
+  topic: pricing
+  claim: The pricing page also lists Growth at $18 per user per month, with $26 per user per month shown beside Unlimited Notetaker access.
+  source_id: wf_pricing
+  source_quote: Growth Basic admin controls $18 /user/mo $26 /user/mo Unlimited Notetaker access
+  checked: '2026-11-06'
+  status: confirmed
+  plan_scope:
+  - growth
+  conflicts_with: []
+- id: roi_calculator_pro_monthly_12
+  version: 1
+  topic: pricing
+  claim: The pricing page ROI calculator uses $12 as the Flow Pro monthly cost.
+  source_id: wf_pricing
+  source_quote: 'Flow Pro monthly cost: $12'
+  checked: '2026-11-06'
+  status: confirmed
+  plan_scope:
+  - pro
+  conflicts_with: []
+- id: annual_billing_discount_20
+  version: 1
+  topic: pricing
+  claim: The business page offers monthly and annual billing, with a 20% discount shown for annual.
+  source_id: wf_business
+  source_quote: Monthly Annual 20% discount
+  checked: '2026-11-06'
+  status: confirmed
+  plan_scope:
+  - pro
+  - growth
+  conflicts_with: []
+- id: audit_logs_records_membership_seat_changes
+  version: 1
+  topic: governance
+  claim: Audit Logs record who changed membership, seats, roles, invitations, or join requests in the enterprise.
+  source_id: docs_audit_logs
+  source_quote: shows who changed membership, seats, roles, invitations, or join requests
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: audit_logs_cannot_be_switched_off
+  version: 1
+  topic: compliance
+  claim: Once audit logging is set up, audit recording cannot be switched off for the enterprise.
+  source_id: docs_audit_logs
+  source_quote: audit recording cannot be switched off for your enterprise
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: audit_logs_events_can_be_lost_v2
+  version: 1
+  topic: compliance
+  claim: Audit events can be lost while they are being recorded.
+  source_id: docs_audit_logs
+  source_quote: events can be lost while they are recorded
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: audit_logs_shared_timestamp_incomplete
+  version: 1
+  topic: compliance
+  claim: If a full page shares one exact timestamp, older tied events can be unreachable, so the table and export can be incomplete.
+  source_id: docs_audit_logs
+  source_quote: older tied events can be unreachable
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: audit_logs_siem_streaming_requires_enterprise
+  version: 1
+  topic: security
+  claim: Streaming audit events to a SIEM requires an Enterprise plan and streaming access.
+  source_id: docs_audit_logs
+  source_quote: Requires an Enterprise plan and streaming access
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: baa_personal_sign_ios
+  version: 1
+  topic: compliance
+  claim: A personal BAA can be signed on iOS.
+  source_id: docs_baa_revoke
+  source_quote: A personal BAA can be signed on iOS
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: baa_records_retained_after_deletion_v2
+  version: 1
+  topic: privacy
+  claim: BAA records are retained after usage-data deletion or account deletion.
+  source_id: docs_baa_revoke
+  source_quote: are retained after usage-data deletion or account deletion
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: baa_settings_stay_off_after_revoke
+  version: 1
+  topic: consent
+  claim: After a revoke, Dictation cloud storage and model training sharing stay off until the user turns them back on.
+  source_id: docs_baa_revoke
+  source_quote: storage and sharing stay off until you turn them back on
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: baa_org_only_policy_controls_sharing
+  version: 1
+  topic: consent
+  claim: With an org-only BAA, organization policy controls sharing.
+  source_id: docs_baa_revoke
+  source_quote: With an org-only BAA, organization policy controls sharing
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: baa_signed_copy_individual_only
+  version: 1
+  topic: compliance
+  claim: Signed BAA copy downloads are for individual, non-enterprise users only.
+  source_id: docs_baa_revoke
+  source_quote: Signed-copy downloads are for individual (non-enterprise) users
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: baa_enterprise_no_signed_download
+  version: 1
+  topic: governance
+  claim: Neither enterprise HIPAA row offers a download of the signed BAA.
+  source_id: docs_baa_revoke
+  source_quote: Neither enterprise row offers Download signed BAA
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: hipaa_baa_signing_plans
+  version: 1
+  topic: compliance
+  claim: HIPAA BAA signing is available on the Growth and Enterprise plans.
+  source_id: docs_hipaa
+  source_quote: HIPAA BAA signing is available on Growth and Enterprise
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - growth
+  - enterprise
+  conflicts_with: []
+- id: hipaa_free_pro_not_ready
+  version: 1
+  topic: compliance
+  claim: Free and Pro plans are not HIPAA-ready.
+  source_id: docs_hipaa
+  source_quote: Free and Pro plans are not HIPAA-ready
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - free
+  - pro
+  conflicts_with: []
+- id: hipaa_personal_baa_not_in_app
+  version: 1
+  topic: legal
+  claim: Personal BAAs cannot be signed from the app.
+  source_id: docs_hipaa
+  source_quote: personal BAAs cannot be signed from the app
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: hipaa_baa_signed_by_admin
+  version: 1
+  topic: governance
+  claim: The BAA is signed by an authorized administrator in the admin portal.
+  source_id: docs_hipaa
+  source_quote: is done by an authorized administrator in the admin portal
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - growth
+  - enterprise
+  conflicts_with: []
+- id: hipaa_baa_click_through
+  version: 1
+  topic: legal
+  claim: The BAA is a click-through agreement.
+  source_id: docs_hipaa
+  source_quote: The BAA is a click-through agreement
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: hipaa_baa_revocation_permanent
+  version: 1
+  topic: legal
+  claim: Revoking a personal BAA is permanent, and a personal BAA cannot be signed again.
+  source_id: docs_hipaa
+  source_quote: Revoking is permanent — a personal BAA cannot be signed again
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: hipaa_android_audio_blocked_unknown
+  version: 1
+  topic: privacy
+  claim: On Android, audio sharing stays blocked while BAA status is unknown.
+  source_id: docs_hipaa
+  source_quote: audio sharing stays blocked until that status is known
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: hipaa_notetaker_under_baa
+  version: 1
+  topic: product
+  claim: Teams and individuals under a signed BAA can use Notetaker on Mac and Windows.
+  source_id: docs_hipaa
+  source_quote: under a signed BAA can use Notetaker on Mac and Windows
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: hipaa_premeeting_briefs_not_under_baa
+  version: 1
+  topic: product
+  claim: Pre-meeting briefs do not run under a BAA.
+  source_id: docs_hipaa
+  source_quote: such as pre-meeting briefs, don't run under a BAA
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: vendor_assessment_enterprise_only
+  version: 1
+  topic: compliance
+  claim: Completed vendor security assessments, questionnaires and security review calls are reserved for Enterprise customers and prospects.
+  source_id: docs_vendor_assessments
+  source_quote: are reserved for Enterprise customers and prospects, and require a signed NDA
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: vendor_assessment_nda_required
+  version: 1
+  topic: legal
+  claim: A signed NDA is required before a completed vendor security assessment or security call is provided.
+  source_id: docs_vendor_assessments
+  source_quote: require a signed NDA
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - enterprise
+  conflicts_with: []
+- id: soc2_type2_criteria_scope
+  version: 1
+  topic: compliance
+  claim: The SOC 2 Type II report by A-LIGN covers the Security, Availability and Confidentiality Trust Services Criteria.
+  source_id: docs_vendor_assessments
+  source_quote: covering the Security, Availability, and Confidentiality Trust Services Criteria
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: soc2_type2_hipaa_hitech_scope
+  version: 1
+  topic: compliance
+  claim: The SOC 2 Type II report also covers HIPAA and HITECH requirements.
+  source_id: docs_vendor_assessments
+  source_quote: plus HIPAA and HITECH requirements
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: iso27001_surveillance_recertification
+  version: 1
+  topic: compliance
+  claim: The ISO/IEC 27001 certificate is maintained through annual surveillance audits, with recertification every three years.
+  source_id: docs_vendor_assessments
+  source_quote: maintained through annual surveillance audits with recertification every three years
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: subprocessor_list_no_request_needed
+  version: 1
+  topic: privacy
+  claim: The current subprocessor list needs no access request to view.
+  source_id: docs_vendor_assessments
+  source_quote: No access request is needed for the current subprocessor list
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: soc2_iso_in_scope_system_dictation
+  version: 1
+  topic: compliance
+  claim: Wispr Flow dictation is the in-scope system for the SOC 2 examinations and the ISO 27001 certification audit.
+  source_id: docs_vendor_assessments
+  source_quote: in-scope system for the SOC 2 examinations and the ISO 27001 certification audit
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []
+- id: baa_available_healthcare_growth_enterprise
+  version: 1
+  topic: legal
+  claim: A Business Associate Agreement is available for healthcare customers on the Growth and Enterprise plans.
+  source_id: docs_vendor_assessments
+  source_quote: for healthcare customers on the Growth and Enterprise plans
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - growth
+  - enterprise
+  conflicts_with: []
+- id: hipaa_ready_with_signed_baa
+  version: 1
+  topic: compliance
+  claim: Flow is HIPAA-ready once a Business Associate Agreement is signed.
+  source_id: docs_vendor_assessments
+  source_quote: Flow is HIPAA-ready with a signed BAA
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - growth
+  - enterprise
+  conflicts_with: []
+- id: baa_signed_by_org_admin
+  version: 1
+  topic: governance
+  claim: An organization admin signs the Business Associate Agreement in the admin portal.
+  source_id: docs_vendor_assessments
+  source_quote: An organization admin signs it in the admin portal
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - growth
+  - enterprise
+  conflicts_with: []
+- id: hipaa_row_disabled_other_plans
+  version: 1
+  topic: governance
+  claim: The org-wide HIPAA setting is disabled on plans other than Growth and Enterprise, and for non-admins.
+  source_id: docs_vendor_assessments
+  source_quote: the org-wide HIPAA row is disabled on other plans and for non-admins
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - growth
+  - enterprise
+  conflicts_with: []
+- id: vulnerability_reports_not_by_email_v2
+  version: 1
+  topic: security
+  claim: The Vulnerability Disclosure and Bug Bounty Program does not accept vulnerability reports emailed to a security@ inbox.
+  source_id: docs_vendor_assessments
+  source_quote: does not accept submissions emailed to a security@ inbox
+  checked: '2026-11-07'
+  status: confirmed
+  plan_scope:
+  - unknown
+  conflicts_with: []

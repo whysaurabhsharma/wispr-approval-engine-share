@@ -1,0 +1,16 @@
+- pair: eval_aes_a|eval_aes_b
+  verdict: same-fact
+  reason: Both say stored data is encrypted with AES-256.
+- pair: eval_notetaker_free_no|eval_notetaker_free_yes
+  verdict: contradiction
+  severity: medium
+  type: notetaker_free_plan
+  reason: One says Notetaker "is not included in the Free plan" and the other says it "is available on the Free plan".
+- pair: eval_sso_a|eval_sso_b
+  verdict: same-fact
+  reason: Both say the Growth plan includes SAML single sign-on.
+- pair: eval_soc2_available|eval_soc2_expected
+  verdict: stale
+  severity: high
+  type: soc2_status
+  reason: One says the report is "expected in March 2026" but the other says it "is available in the Trust Center".

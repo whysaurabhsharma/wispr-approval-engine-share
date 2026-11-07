@@ -1,0 +1,9 @@
+# Planted eval: two real conflicts, two same-fact pairs. Fictional company, not Wispr.
+- {id: eval_notetaker_free_yes, claim: Notetaker is available on the Free plan., source_id: eval_pricing, source_quote: Notetaker is available on Free, checked: '2026-11-05', status: confirmed, plan_scope: [free]}
+- {id: eval_notetaker_free_no, claim: Notetaker is not included in the Free plan., source_id: eval_docs, source_quote: Notetaker is not included in Free, checked: '2026-11-05', status: confirmed, plan_scope: [free]}
+- {id: eval_soc2_expected, claim: The SOC 2 Type II report is expected in March 2026., source_id: eval_blog, source_quote: report is expected in March, checked: '2026-11-05', status: in-progress, plan_scope: [unknown]}
+- {id: eval_soc2_available, claim: The SOC 2 Type II report is available in the Trust Center., source_id: eval_docs, source_quote: report is available in the Trust Center, checked: '2026-11-05', status: confirmed, plan_scope: [unknown]}
+- {id: eval_aes_a, claim: Data is encrypted at rest with AES-256., source_id: eval_blog, source_quote: encrypted at rest with AES-256, checked: '2026-11-05', status: confirmed, plan_scope: [unknown]}
+- {id: eval_aes_b, claim: AES-256 encryption protects stored customer data., source_id: eval_docs, source_quote: AES-256 encryption protects stored data, checked: '2026-11-05', status: confirmed, plan_scope: [unknown]}
+- {id: eval_sso_a, claim: SSO with SAML is available on the Growth plan., source_id: eval_pricing, source_quote: SSO with SAML on Growth, checked: '2026-11-05', status: confirmed, plan_scope: [growth]}
+- {id: eval_sso_b, claim: The Growth plan includes SAML single sign-on., source_id: eval_docs, source_quote: Growth includes SAML single sign-on, checked: '2026-11-05', status: confirmed, plan_scope: [growth]}

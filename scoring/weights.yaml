@@ -1,0 +1,12 @@
+# PROVISIONAL. No conversion data exists outside Wispr; these weights are a reasoned guess until Phase 4.
+# See docs/scoring.md. Change a weight only with a dated line in docs/decisions.md.
+penetration: 3.0      # flow_users / employees (count variant only)
+absolute_users: 2.0   # log10(flow_users) (count variant only)
+no_team_plan: 2.0
+no_sso: 1.5
+regulated_industry: 1.0   # healthcare, legal, fintech
+signal: 1.0               # any free-text public signal (synthetic set)
+signal_strength:          # public-signal set: how good the public evidence of use is
+  strong: 2.0             # case study or named quote about team use
+  medium: 1.0             # named individual use
+  weak: 0.5               # logo wall, no detail

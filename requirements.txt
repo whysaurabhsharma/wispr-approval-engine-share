@@ -1,0 +1,7 @@
+requests
+beautifulsoup4
+pyyaml
+pandas
+pytest
+python-dotenv
+cryptography

@@ -1,0 +1,12 @@
+account_id,company,signal_type,strength,person_role,what_was_said,source_url,checked,notes
+ps-01,Clay,case_study,strong,Head of GTM Engineering Ecosystem,Wispr case study reports faster GTM execution and customer replies after team use of Flow,https://wisprflow.ai/case-study/clay,2026-11-06,Vendor-published case study; figures are Wispr's
+ps-02,Baseten,named_quote,strong,Co-Founder and CEO,Says Flow was adopted unusually fast across sales and engineering,https://wisprflow.ai/business,2026-11-06,Baseten is also a Wispr vendor (transcription); treat as related party
+ps-03,Lovable,named_quote,medium,Head of Growth,Says she now talks to her phone and laptop instead of typing,https://wisprflow.ai/business,2026-11-06,Individual use; no team adoption stated
+ps-04,Microsoft,logo_wall,weak,unknown,"Logo shown under ""Used by professionals at""",https://wisprflow.ai/business,2026-11-06,Individual use implied; no company agreement stated
+ps-05,Amazon,logo_wall,weak,unknown,"Logo shown under ""Used by professionals at""",https://wisprflow.ai/business,2026-11-06,Individual use implied; no company agreement stated
+ps-06,Notion,logo_wall,weak,unknown,"Logo shown under ""Used by professionals at""",https://wisprflow.ai/business,2026-11-06,Individual use implied; no company agreement stated
+ps-07,Klarna,logo_wall,weak,unknown,"Logo shown under ""Used by professionals at""",https://wisprflow.ai/business,2026-11-06,Individual use implied; no company agreement stated
+ps-08,Groupon,logo_wall,weak,unknown,"Logo shown under ""Used by professionals at""",https://wisprflow.ai/business,2026-11-06,Individual use implied; no company agreement stated
+ps-09,Vercel,logo_wall,weak,unknown,"Logo shown under ""Used by professionals at""",https://wisprflow.ai/business,2026-11-06,Individual use implied; no company agreement stated
+ps-10,Mercury,logo_wall,weak,unknown,"Logo shown under ""Used by professionals at""",https://wisprflow.ai/business,2026-11-06,Individual use implied; no company agreement stated
+ps-11,Turing,logo_wall,weak,unknown,"Logo shown under ""Used by professionals at""",https://wisprflow.ai/business,2026-11-06,Individual use implied; no company agreement stated

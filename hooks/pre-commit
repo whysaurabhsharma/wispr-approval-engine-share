@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Blocks REAL_ files and anything that looks like an email address.
+set -e
+for f in $(git diff --cached --name-only); do
+  case "$f" in *REAL*) echo "BLOCKED: $f looks like real customer data"; exit 1;; esac
+  case "$f" in claims/snapshots/*) continue;; esac  # public vendor pages
+  # vendor contact addresses on public pages are allowed; any other address blocks
+  if [ -f "$f" ] && grep -Eo '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}' "$f" | grep -Eviq '@(wispr\.ai|wisprflow\.ai|willowvoice\.com)$'; then
+    echo "BLOCKED: $f contains an email address"; exit 1
+  fi
+done

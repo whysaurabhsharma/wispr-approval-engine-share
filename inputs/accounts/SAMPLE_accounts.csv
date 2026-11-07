@@ -1,0 +1,21 @@
+account_id,domain,flow_users,users_by_team,has_team_plan,sso_enabled,employees,industry,it_contact,champion,signals
+sample-01,sample01.example,12,Sales:6;Support:4,false,true,900,saas,[find IT lead],[unknown],employee posted about Flow
+sample-02,sample02.example,35,Sales:17;Support:11,true,true,200,saas,[find IT lead],[unknown],
+sample-03,sample03.example,60,Sales:30;Support:20,true,true,1800,saas,[find IT lead],[unknown],employee posted about Flow
+sample-04,sample04.example,,,true,true,1800,support-outsourcing,[find IT lead],[unknown],employee posted about Flow
+sample-05,sample05.example,,,false,true,3200,logistics,[find IT lead],[unknown],
+sample-06,sample06.example,12,Sales:6;Support:4,false,false,3200,logistics,[find IT lead],[unknown],employee posted about Flow
+sample-07,sample07.example,142,Sales:71;Support:47,false,true,200,saas,[find IT lead],[unknown],employee posted about Flow
+sample-08,sample08.example,310,Sales:155;Support:103,true,false,3200,saas,[find IT lead],[unknown],employee posted about Flow
+sample-09,sample09.example,,,true,true,5000,legal,[find IT lead],[unknown],employee posted about Flow
+sample-10,sample10.example,60,Sales:30;Support:20,false,false,3200,fintech,[find IT lead],[unknown],hiring security lead
+sample-11,sample11.example,35,Sales:17;Support:11,true,true,900,support-outsourcing,[find IT lead],[unknown],
+sample-12,sample12.example,142,Sales:71;Support:47,false,false,200,healthcare,[find IT lead],[unknown],employee posted about Flow
+sample-13,sample13.example,35,Sales:17;Support:11,true,true,1800,fintech,[find IT lead],[unknown],hiring security lead
+sample-14,sample14.example,35,Sales:17;Support:11,true,false,450,legal,[find IT lead],[unknown],
+sample-15,sample15.example,,,false,false,5000,support-outsourcing,[find IT lead],[unknown],hiring security lead
+sample-16,sample16.example,60,Sales:30;Support:20,false,true,3200,saas,[find IT lead],[unknown],hiring security lead
+sample-17,sample17.example,310,Sales:155;Support:103,true,true,1800,support-outsourcing,[find IT lead],[unknown],employee posted about Flow
+sample-18,sample18.example,310,Sales:155;Support:103,false,false,900,support-outsourcing,[find IT lead],[unknown],hiring security lead
+sample-19,sample19.example,35,Sales:17;Support:11,true,false,5000,healthcare,[find IT lead],[unknown],
+sample-20,sample20.example,,,false,true,3200,logistics,[find IT lead],[unknown],hiring security lead

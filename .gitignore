@@ -1,0 +1,7 @@
+.venv/
+.env
+outputs/review/
+*REAL*
+*.map.enc
+claims/snapshots/**/*.html
+__pycache__/

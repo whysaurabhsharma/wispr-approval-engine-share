@@ -1,0 +1,4 @@
+hubspot: off
+clay: off
+drata_export: off
+# Flip only with Wispr's credentials and written OK. Exports dry-run by default.

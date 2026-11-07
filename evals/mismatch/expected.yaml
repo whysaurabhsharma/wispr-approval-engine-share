@@ -1,0 +1,4 @@
+- {pair: eval_aes_a|eval_aes_b, flag: false}
+- {pair: eval_notetaker_free_no|eval_notetaker_free_yes, flag: true}
+- {pair: eval_sso_a|eval_sso_b, flag: false}
+- {pair: eval_soc2_available|eval_soc2_expected, flag: true}

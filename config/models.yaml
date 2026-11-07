@@ -1,0 +1,5 @@
+# Model names checked 3 Nov 2026
+draft_model: "claude-sonnet-5-5"
+judge_model: "claude-opus-5-5"
+extract_model: "claude-haiku-5-5"
+max_cost_per_run_usd: 2.00

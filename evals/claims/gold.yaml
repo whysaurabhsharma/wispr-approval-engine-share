@@ -1,0 +1,267 @@
+frozen: '2026-11-05'
+extractor: claim-extractor (haiku), rules 1-6
+score: 29/30
+threshold: 28/30
+rows:
+- id: dictation_auto_punctuation_default
+  source_id: comp_apple_dictation
+  status: confirmed
+  plan_scope: unknown
+  claim: In supported languages, Dictation automatically inserts commas, periods and
+    question marks.
+  source_quote: automatically inserts commas, periods, and question marks
+  correct: y
+  note: ''
+- id: dictation_auto_punctuation_toggle
+  source_id: comp_apple_dictation
+  status: confirmed
+  plan_scope: unknown
+  claim: Users can turn off Auto-punctuation in Keyboard settings under Dictation.
+  source_quote: turn off Auto-punctuation
+  correct: y
+  note: ''
+- id: willow_transcripts_not_retained
+  source_id: comp_willow_security
+  status: confirmed
+  plan_scope: unknown
+  claim: Willow states transcripts are not logged server-side or retained by default
+    after dictation.
+  source_quote: not logged server-side or retained by default
+  correct: y
+  note: ''
+- id: willow_no_ai_training_without_consent
+  source_id: comp_willow_security
+  status: confirmed
+  plan_scope: unknown
+  claim: Willow states voice and text are not used to improve AI models without user
+    consent.
+  source_quote: not used to improve AI models without your consent
+  correct: y
+  note: ''
+- id: privacy_mode_no_training
+  source_id: comp_willow_teams
+  status: confirmed
+  plan_scope: unknown
+  claim: With Privacy Mode enabled org-wide, customer code is never used for training,
+    per the page.
+  source_quote: With Privacy Mode enabled org-wide, your code is never used for training.
+  correct: y
+  note: ''
+- id: enterprise_plan_custom_pricing
+  source_id: comp_willow_teams
+  status: confirmed
+  plan_scope: enterprise plan
+  claim: The page says customers who need scale may need custom pricing on the Enterprise
+    Plan.
+  source_quote: require dedicated support and custom pricing for scale
+  correct: y
+  note: ''
+- id: hipaa_business_associate_agreements
+  source_id: comp_willow_teams
+  status: confirmed
+  plan_scope: unknown
+  claim: Willow offers Business Associate Agreements for HIPAA-regulated teams.
+  source_quote: supports HIPAA-regulated teams with enterprise controls, privacy safeguards,
+    and Business Associate Agreements
+  correct: y
+  note: ''
+- id: usage_data_export
+  source_id: comp_willow_teams
+  status: confirmed
+  plan_scope: enterprise
+  claim: Usage data can be exported as CSV or through the usage API.
+  source_quote: Data can be exported through CSV and our usage API
+  correct: y
+  note: ''
+- id: audit_logs_csv_formula_prefix
+  source_id: docs_audit_logs
+  status: confirmed
+  plan_scope: enterprise
+  claim: CSV audit values starting with =, +, -, @, tab, or carriage return are quoted
+    and prefixed with an apostrophe.
+  source_quote: CSV values starting with =, +, -, @, tab, or carriage return are quoted
+  correct: y
+  note: ''
+- id: baa_signing_turns_storage_off
+  source_id: docs_baa_revoke
+  status: confirmed
+  plan_scope: unknown
+  claim: Signing a personal BAA turns Dictation cloud storage off for the account.
+  source_quote: and Dictation cloud storage off for your account
+  correct: y
+  note: ''
+- id: ca_no_screenshots
+  source_id: docs_context_awareness
+  status: confirmed
+  plan_scope: unknown
+  claim: Context Awareness works from text and does not take screenshots.
+  source_quote: Flow works from text and does not take screenshots.
+  correct: y
+  note: ''
+- id: ca_context_cleared_after_dictation
+  source_id: docs_context_awareness
+  status: confirmed
+  plan_scope: unknown
+  claim: Captured text, extracted names and counts are cleared when each dictation
+    ends.
+  source_quote: extracted names, and counts for a dictation are cleared when that
+    dictation ends
+  correct: y
+  note: ''
+- id: ca_mac_accessibility_permission
+  source_id: docs_context_awareness
+  status: confirmed
+  plan_scope: unknown
+  claim: On Mac, Context Awareness needs accessibility permissions granted in System
+    Settings.
+  source_quote: On Mac, grant accessibility permissions in System Settings
+  correct: y
+  note: ''
+- id: ca_improve_model_off_keeps_context_awareness
+  source_id: docs_context_awareness
+  status: confirmed
+  plan_scope: unknown
+  claim: Turning off Improve the model for everyone does not turn off Context Awareness.
+  source_quote: does not turn off Context Awareness
+  correct: y
+  note: ''
+- id: delete_account_revokes_integrations
+  source_id: docs_data_requests
+  status: confirmed
+  plan_scope: unknown
+  claim: Deleting an account revokes connected integrations.
+  source_quote: revokes connected integrations
+  correct: y
+  note: ''
+- id: unconfirmed_org_settings_forced_off
+  source_id: docs_hipaa
+  status: confirmed
+  plan_scope: unknown
+  claim: When an organization account's settings cannot be confirmed, model improvement
+    and dictation cloud storage are forced off until the settings resolve.
+  source_quote: are forced off until the settings resolve
+  correct: y
+  note: ''
+- id: revocation_removes_settings_locks
+  source_id: docs_hipaa
+  status: confirmed
+  plan_scope: unknown
+  claim: Revoking a BAA removes the agreement's settings locks.
+  source_quote: Revoking removes the agreement's settings locks
+  correct: y
+  note: ''
+- id: dictation_cloud_storage_scope
+  source_id: docs_security_faq
+  status: confirmed
+  plan_scope: unknown
+  claim: Dictation Cloud Storage controls whether dictation data is stored on Wispr's
+    servers, not Notetaker or Scratchpad.
+  source_quote: Whether dictation data is stored on Wispr's servers; dictation only,
+    not Notetaker or Scratchpad
+  correct: y
+  note: ''
+- id: member_cannot_relax_admin_setting
+  source_id: docs_security_faq
+  status: confirmed
+  plan_scope: unknown
+  claim: A member cannot relax a setting that an admin manages.
+  source_quote: a member cannot relax an admin-managed setting
+  correct: y
+  note: ''
+- id: snippet_bulk_import_rejects_org_wide
+  source_id: docs_snippet_policy
+  status: confirmed
+  plan_scope: business-tier,growth,enterprise
+  claim: Bulk import writes to the importer's team only and rejects org-wide entries,
+    regardless of policy or role.
+  source_quote: rejects org-wide entries, regardless of policy or role.
+  correct: y
+  note: ''
+- id: connectors_not_generally_available
+  source_id: docs_snippet_policy
+  status: in-progress
+  plan_scope: unknown
+  claim: Several connectors are not yet generally available.
+  source_quote: Several connectors are not yet generally available.
+  correct: y
+  note: ''
+- id: soc2_type2_hipaa_hitech_requirements
+  source_id: docs_vendor_assessments
+  status: confirmed
+  plan_scope: unknown
+  claim: The SOC 2 Type II report also covers HIPAA and HITECH requirements.
+  source_quote: together with HIPAA and HITECH requirements
+  correct: y
+  note: ''
+- id: tia_wispr_supporting_materials
+  source_id: docs_vendor_assessments
+  status: confirmed
+  plan_scope: unknown
+  claim: For a TIA, Wispr provides supporting materials through the Trust Center.
+  source_quote: Wispr provides supporting materials through the Trust Center
+  correct: y
+  note: ''
+- id: granola_system_audio_capture
+  source_id: legal_granola_btlaw
+  status: confirmed
+  plan_scope: unknown
+  claim: Granola uses system audio and microphone input to capture and transcribe
+    all participants' communications.
+  source_quote: Granola uses system audio and microphone input to capture and transcribe
+    all participants’ communications
+  correct: y
+  note: ''
+- id: otter_data_kept_after_revocation
+  source_id: legal_granola_btlaw
+  status: confirmed
+  plan_scope: unknown
+  claim: Otter.ai does not delete data already captured from its systems after a system
+    administrator revokes access.
+  source_quote: data already captured is not deleted from Otter.ai’s systems
+  correct: n
+  note: allegation stated as fact
+- id: otter_bipa_claims_proceed
+  source_id: legal_otter_uctoday
+  status: confirmed
+  plan_scope: unknown
+  claim: The court allowed claims under Illinois' Biometric Information Privacy Act
+    (BIPA) against Otter to proceed.
+  source_quote: allowed claims under Illinois’ Biometric Information Privacy Act (BIPA)
+    to proceed
+  correct: y
+  note: ''
+- id: otter_case_still_ongoing
+  source_id: legal_otter_uctoday
+  status: in-progress
+  plan_scope: unknown
+  claim: The Otter.ai privacy case is still ongoing and its outcome is not yet decided.
+  source_quote: While still ongoing, the outcome of the case
+  correct: y
+  note: ''
+- id: fluid_dictation_auto_corrects_text
+  source_id: ms_fluid_dictation
+  status: confirmed
+  plan_scope: unknown
+  claim: Fluid dictation automatically corrects grammar, punctuation and filler words
+    as the user speaks.
+  source_quote: It automatically corrects grammar, punctuation, and filler words as
+    you speak
+  correct: y
+  note: ''
+- id: fluid_dictation_revert_original_text
+  source_id: ms_fluid_dictation
+  status: confirmed
+  plan_scope: unknown
+  claim: Users can say “Revert” or “Undo that” to restore the original text after
+    a correction.
+  source_quote: simply say “Revert” or “Undo that,”
+  correct: y
+  note: ''
+- id: hipaa_baa_available
+  source_id: wf_enterprise_privacy_post
+  status: confirmed
+  plan_scope: all
+  claim: HIPAA support is available with a signed Business Associate Agreement (BAA).
+  source_quote: HIPAA support is available on any plan with a signed BAA
+  correct: y
+  note: ''
